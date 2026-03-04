@@ -1,7 +1,11 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Hubot_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
 
+const hubot=Hubot_Sans({
+  variable:"--font-hubot",
+  subsets: ["latin"],
+})
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -21,7 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${hubot.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar/>
         {children}

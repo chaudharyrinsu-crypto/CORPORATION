@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@theme {
+  --font-hubot: var(--font-hubot);
+}
+
+.font-hubot {
+  font-family: var(--font-hubot), sans-serif;
+}
 
 
 :root {
