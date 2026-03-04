@@ -24,7 +24,7 @@ const NavBar = () => {
                                 <li className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
                                     <span className='lg:block hidden'><MdOutlineSettingsVoice /></span>
                                     <span className='hover:underline'>English</span>
-                                    <span className='lg:rotate-0 -rotate-90'><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </li>
                                 <li className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
                                     <span><LuContrast /></span>
@@ -50,7 +50,7 @@ const NavBar = () => {
                                 </li>
                                 <li className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
                                     <span className='hover:underline'>About</span>
-                                    <span><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </li>
                             </ul>
                         </div>
@@ -64,34 +64,45 @@ const NavBar = () => {
                     </div>
 
                     <div className='flex lg:flex-row flex-col lg:order-2 order-1 justify-between items-center lg:text-[16px] text-sm pt-4 pb-4'>
-                        <ul className='flex lg:flex-row flex-col gap-10 justify-between items-center w-full lg:w-auto'>
+                        <ul className='flex lg:flex-row flex-col gap-6 lg:gap-10 justify-between items-center w-full lg:w-auto'>
                             <li className='flex justify-between w-full'>
                                 <Link href={`/`}><img className='h-7' src="/logo.svg" alt="" /></Link>
                                 <span onClick={() => setClickBar(!clickBar)} className={`text-4xl cursor-pointer ${clickBar ? 'rotate-90' : ''} duration-500 lg:hidden block`}>{clickBar ? <RxCross2 /> : <HiMiniBars2 />}</span>
                             </li>
-                            <li className='flex lg:flex-row flex-col justify-between gap-8 w-full'>
+                            <li className='lg:hidden block w-full relative'>
+                                <div className='w-full'>
+                                    <span className='absolute left-4 top-1/2 -translate-y-1/2'><TfiSearch /></span>
+                                    <input className='w-full outline-none bg-white border pr-4 pl-10 py-2.5 rounded-md text-sm font-normal' type="text" name="" id="" placeholder='Search Hopspot' />
+                                </div>
+                            </li>
+                            <li className='flex lg:flex-row flex-col justify-between gap-8 w-full lg:py-0 py-5'>
                                 <div className='flex lg:gap-1.5 justify-between items-center'>
                                     <span className='hover:underline'>Products</span>
-                                    <span className='lg:rotate-0 -rotate-90'><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </div>
                                 <div className='flex lg:gap-1.5 justify-between items-center'>
                                     <span className='hover:underline'>Solutions</span>
-                                    <span className='lg:rotate-0 -rotate-90'><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </div>
                                 <div className='flex lg:gap-1.5 justify-between items-center'>
                                     <span className='hover:underline'>Pricing</span>
-                                    <span className='lg:rotate-0 -rotate-90'><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </div>
                                 <div className='flex lg:gap-1.5 justify-between items-center'>
                                     <span className='hover:underline'>Resources</span>
-                                    <span className='lg:rotate-0 -rotate-90'><LiaAngleDownSolid /></span>
+                                    <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
                                 </div>
                             </li>
 
                         </ul>
-                        <div className='flex lg:w-auto w-full text-center gap-5 text-sm lg:border-none border-t border-b border-[#D9D9D8] lg:py-0 py-4'>
-                            <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4.5 py-2.5 rounded-md lg:w-auto w-1/2' href={``}>Get a demo</Link>
-                            <Link className='border-2 hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800] px-4.5 py-2.5 rounded-md lg:w-auto w-1/2 duration-500 ' href={``}>Start 14-day free trial</Link>
+                        <div className='lg:w-auto w-full text-sm lg:border-none border-t border-[#D9D9D8] lg:py-0 py-4 flex flex-col gap-4 text-center'>
+                            <div className='flex gap-5'>
+                                <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4.5 py-2.5 rounded-md lg:w-auto w-1/2' href={``}>Get a demo</Link>
+                                <Link className='border-2 hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800] px-4.5 py-2.5 rounded-md lg:w-auto w-1/2 duration-500 ' href={``}>Start 14-day free trial</Link>
+                            </div>
+                            <div className='border-t border-b border-[#D9D9D8] py-4'>
+                              <Link className=' bg-[#1f1f1f]  text-white  px-4.5 py-2.5 rounded-md block w-full duration-500 ' href={``}>Log in</Link>
+                              </div>
                         </div>
                     </div>
                 </div>
