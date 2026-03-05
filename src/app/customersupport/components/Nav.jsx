@@ -12,7 +12,7 @@ import { language } from '@/app/data/AllData';
 const Nav = () => {
     const [clickBar, setClickBar] = useState(null)
     const [showLanguage, setShowLanguage] = useState(false)
-    const [hoverLanguage, setHoverLanguage] = useState([])
+    const [hoverLanguage, setHoverLanguage] = useState(null)
 
     return (
         <>
@@ -34,10 +34,10 @@ const Nav = () => {
                                 <span className='lg:block hidden'><MdOutlineSettingsVoice /></span>
                                 <span className='text-[12px] text-[#2e2e2e] '>English</span>
                                 <span className='lg:rotate-0 -rotate-90 text-[#797979]'><RiArrowDownSLine /></span>
-                                <ul onMouseLeave={()=>setShowLanguage(false)} className={`${showLanguage ? 'block' : 'hidde'} absolute text-[12px] top-6 py-4 items-center justify-center bg-white border border-[#D9D9D8] rounded-sm`}>
-                                    <li className='flex flex-col gap-2 hover:bg-[#eeeeee] px-5'>
+                                <ul onMouseLeave={()=>setShowLanguage(false)} className={`${showLanguage ? 'block' : 'hidden'} absolute text-[12px] top-6 py-3 items-center justify-center bg-white border border-[#D9D9D8] rounded-sm`}>
+                                    <li className='flex flex-col'>
                                         {language.map((language, index) => (
-                                            <Link key={index} href={``}>{language}</Link>
+                                            <Link className='py-1  px-5 hover:bg-[#eeeeee]' key={index} href={``}>{language}</Link>
                                         ))}
                                     </li>
                                 </ul>
@@ -47,7 +47,7 @@ const Nav = () => {
                                     <span className='absolute left-4 top-1/2 -translate-y-1/2'><TfiSearch /></span>
                                     <input className='w-full outline-none bg-white border border-[#848484] pr-4 pl-10 py-2 rounded-md text-[16px] font-normal' type="text" name="" id="" placeholder='Search all help and learing resources' />
                                 </div>
-                                <Link className='hidden lg:block' href={``}>Go to my account</Link>
+                                <Link className='hidden lg:block' href={`/login`}>Go to my account</Link>
                                 <div className='hidden lg:flex lg:flex-row flex-col gap-4 lg:w-auto w-full'>
                                     <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4.5 py-2 rounded-md lg:w-auto' href={``}>Get a demo</Link>
                                     <Link className='border-2 hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800] px-4.5 py-2 rounded-md lg:w-auto  duration-500 ' href={``}>Start 14-day free trial</Link>

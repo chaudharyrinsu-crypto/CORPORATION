@@ -37,7 +37,7 @@ const NavBar = () => {
 
                                     </li>
                                     <li className='lg:w-auto w-full'>
-                                        <Link className='flex lg:gap-1.5 justify-between items-center ' href={``}>
+                                        <Link target='_blank' className='flex lg:gap-1.5 justify-between items-center ' href={`/customersupport`}>
                                             <span className='lg:block hidden'><TiMessages /></span>
                                             <span className='hover:underline'>Customer Support</span>
                                             <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
@@ -109,7 +109,7 @@ const NavBar = () => {
                             <div className='lg:w-auto w-full text-sm lg:border-none border-t border-[#D9D9D8] lg:py-0 py-4 flex flex-col gap-4 text-center'>
                                 <div className='flex gap-5'>
                                     <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4.5 py-2.5 rounded-md lg:w-auto w-1/2' href={``}>Get a demo</Link>
-                                    <Link className='border-2 hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800] px-4.5 py-2.5 rounded-md lg:w-auto w-1/2 duration-500 ' href={``}>Start 14-day free trial</Link>
+                                    <Link className='border-2 hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800] px-4.5 py-2.5 rounded-md lg:w-auto w-1/2 duration-500 ' href={``}>Get started free</Link>
                                 </div>
                                 <div className='lg:hidden block border-t border-b border-[#D9D9D8] py-4'>
                                     <Link className=' bg-[#1f1f1f]  text-white  px-4.5 py-2.5 rounded-md block w-full duration-500 ' href={``}>Log in</Link>
