@@ -1,0 +1,1 @@
+export const language=['Español','Deutsch','日本語','Português','Français','Nederlands','Italiano','Polski','Svenska','Suomi','中文 - 繁體','Dansk','Norsk','한국어','ไทย','中文 - 简体',]
