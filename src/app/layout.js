@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${hubot.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavBar/>
+        {/* <NavBar/> */}
         {children}
       </body>
     </html>
