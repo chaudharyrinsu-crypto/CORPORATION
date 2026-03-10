@@ -7,7 +7,7 @@ import { TfiSearch } from "react-icons/tfi";
 import { RxCross2 } from "react-icons/rx";
 import { FiMenu } from "react-icons/fi";
 import SecondNav from './SecondNav';
-import { language } from '@/app/data/AllData';
+import { language } from '@/app/data/products';
 
 const Nav = () => {
     const [clickBar, setClickBar] = useState(null)
