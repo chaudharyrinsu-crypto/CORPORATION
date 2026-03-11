@@ -6,20 +6,20 @@ const Hero = () => {
         <>
             <section className='font-hubot'>
                 <div className='h-[520px] relative'>
-                    <img className='h-full w-full object-cover' src="/homeHero.webp" alt="hero" />
+                    <img className='h-full w-full object-cover sm:block hidden' src="/homeHero.webp" alt="hero" />
                     <div className='w-full h-full absolute top-0 left-0 bg-black/40 z-10'></div>
-                    <div className='absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <div className=' flex flex-col gap-5 text-center text-white'>
+                    <div className='absolute w-full z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                        <div className='flex flex-col align-center justify-center gap-5 text-center text-white'>
                             <span className='text-sm uppercase font-medium'>HubSpot Customer Platform</span>
                             <h1 className='text-7xl leading-[80px]'>Where go-to-market
                                 <span className='inline-block'>teams go to</span>
-                                <span className='pl-4 py-0 relative'>
-                                    <ul className='absolute top-0 left-0'>
-                                        <li className='relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>grow</li>
-                                        <li className='relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>scale</li>
-                                        <li className='relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>close</li>
-                                        <li className='relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>retain</li>
-                                    </ul>
+                                <span className='pl-4 relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-5'>grow
+                                    {/* <ul className='absolute top-0 left-0'>
+                                        <li className='inline-block relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>grow</li>
+                                        <li className='inline-block relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>scale</li>
+                                        <li className='inline-block relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>close</li>
+                                        <li className='inline-block relative after:"" after:absolute after:bg-[#FF4800] after:h-2.5 after:w-2.5 after:rounded-full after:bottom-3'>retain</li>
+                                    </ul> */}
                                 </span>
                             </h1>
                             <p className='leading-[25px] font-medium'>Unite marketing, sales, and customer service on one AI-powered
