@@ -1,7 +1,9 @@
+'use client'
 import Link from 'next/link'
 import React, { useState } from 'react'
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { TfiSearch } from "react-icons/tfi";
+import { products } from '../data/products';
 
 const SecNav = () => {
     const [openMenu, setOpenMenu] = useState(null)
@@ -22,9 +24,16 @@ const SecNav = () => {
                         </div>
                     </li>
                     <li className='flex lg:flex-row flex-col justify-between gap-8 w-full lg:py-0 py-5'>
-                        <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
+                        <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer relative'>
                             <span className='hover:underline'>Products</span>
                             <span className={`${openMenu===1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
+                            {products.map((items,index)=>(
+                                <div key={index} className='absolute'>
+                                    <Link href={``}>
+                                    <h2>{items.name}</h2>
+                                    </Link>
+                                </div>
+                            ))}
                         </div>
                         <div onClick={() => toggleArrow(2)} className='flex lg:gap-1.5 justify-between items-center'>
                             <span className='hover:underline'>Solutions</span>

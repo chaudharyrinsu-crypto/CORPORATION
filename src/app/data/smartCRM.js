@@ -1,4 +1,4 @@
-export const smartCRMHub = [
+export const smartCRMHub = 
     {
         id: "software-content",
         name: "Smart CRM",
@@ -149,4 +149,3 @@ export const smartCRMHub = [
             image: "https://www.hubspot.com/hs-fs/hubfs/CSOL/module-assets/hubspot-2025/cta-content-block/_cta_contentblock_headshots_headshot_11.png?width=380&name=_cta_contentblock_headshots_headshot_11.png"
         }
     }
-];

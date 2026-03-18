@@ -1,4 +1,4 @@
-export const dataHub = [
+export const dataHub = 
     {
         id: "software-data",
         name: "Data Hub",
@@ -86,4 +86,3 @@ export const dataHub = [
             image: "https://www.hubspot.com/hs-fs/hubfs/CSOL/module-assets/hubspot-2025/cta-content-block/_cta_contentblock_headshots_headshot_japanese_3.png?width=380&name=_cta_contentblock_headshots_headshot_japanese_3.png"
         }
     }
-];
