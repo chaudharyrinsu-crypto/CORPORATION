@@ -6,7 +6,7 @@ export const commerceHub =
         category: "CPQ, billing, and payments software",
         title: "CPQ, Billing, and Payments Software",
         description: "AI-powered tools to accelerate the quote-to-revenue process.",
-        logo: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Logos/SVGs/ProductIcons_CommerceHub_Icon_Orange.svgg",
+        logo: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Logos/SVGs/ProductIcons_CommerceHub_Icon_Orange.svg",
         heroImage: "https://www.hubspot.com/hs-fs/hubfs/Quote%20view%20%E2%80%93%20Closing%20Agent%20(1).png?width=1920&height=1080&name=Quote%20view%20%E2%80%93%20Closing%20Agent%20(1).png",
         solutiontitle: "AI That Helps You Close Deals Faster",
         solutiondescription: "Time kills deals. Traditional CPQ (Configure, Price and Quote) tools slow reps with manual steps and complexity. Commerce Hub uses AI to generate branded quotes in seconds, so you can close, quote, bill, and collect payments faster — all in one customer platform.",
