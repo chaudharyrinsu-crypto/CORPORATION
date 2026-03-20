@@ -35,7 +35,7 @@ export const marketingHub ={
     heading: "Content Hub™",
     category: "Marketing automation software",
     title: "Marketing Software",
-    description: "AI-powered tools to help you attract, convert, and engage visitors.",
+    description: "AI-powered tools to help you attract, convert, and engage high-intent visitors.",
     logo: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Logos/SVGs/ProductIcons_MarketingHub_Icon_Orange%20(1).svg",
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Marketing%20Hub/EN/Marketing%20Hub%20-%20Marketing%20Studio.webp?width=1920&height=1080&name=Marketing%20Hub%20-%20Marketing%20Studio.webp",
     solutiontitle: "AI-Powered Marketing That Multiplies Results",
