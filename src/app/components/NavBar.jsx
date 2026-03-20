@@ -17,7 +17,7 @@ const NavBar = () => {
     const [clickBar, setClickBar] = useState(null)
     return (
         <>
-            <nav className='font-hubot font-normal lg:font-semibold'>
+            <nav className='font-hubot font-normal lg:font-semibold relative z-10 shadow-md shadow-black/5'>
                 <div className={` max-w-[1100px] mx-auto lg:px-0 px-5`}>
                     <div className='flex justify-between w-full py-4 lg:hidden'>
                         <Link href={`/`}><img className='h-7' src="/logo.svg" alt="" /></Link>

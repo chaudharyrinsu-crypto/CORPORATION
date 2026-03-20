@@ -28,7 +28,7 @@ const Hero = () => {
                             </p>
                             <div className='flex sm:flex-row flex-col items-center justify-center gap-4 sm:gap-3 w-full pt-5 font-semibold'>
                                 <Link className='bg-[#FF4800] hover:bg-[#C93700] px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300' href={``}>Get a demo</Link>
-                                <Link className='border border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300' href={``}>Get started free</Link>
+                                <Link className='border-2 border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300' href={``}>Get started free</Link>
                             </div>
                         </div>
                     </div>
