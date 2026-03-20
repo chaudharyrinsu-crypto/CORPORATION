@@ -7,7 +7,7 @@ export default {
         sm: "600px",
         md:"768px",
         '2md':"900px",
-        lg: "1024px",
+        lg: "1150px",
         xl: "1280px",
         "2xl": "1536px",
         "3xl": "1700px"
