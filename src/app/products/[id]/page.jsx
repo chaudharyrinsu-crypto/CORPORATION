@@ -11,6 +11,7 @@ const page = () => {
   const params = useParams()
   const { id } = params
   const product = products.find(product => product.id.toString() === id)
+
   return (
     <>
       <section className='bg-[#F8F5EE] font-hubot border-b border-[#D9D9D8] text-center'>
