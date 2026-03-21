@@ -35,7 +35,7 @@ const page = () => {
           <img className='2md:h-44 h-full w-full lg:w-[90%] object-cover object-top rounded-sm pt-2' src={product.heroImage} alt="heroImage" />
         </div>
       </section>
-      <SolutionAbout product={product}/>
+      <SolutionAbout product={product} />
     </>
   )
 }
