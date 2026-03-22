@@ -1,7 +1,6 @@
 
 'use client'
 import React from 'react'
-import { BiSolidCircleHalf } from "react-icons/bi";
 
 const Pricing = ({ product }) => {
     return (
@@ -14,12 +13,11 @@ const Pricing = ({ product }) => {
                     </div>
                     <div>
                         <div>
-                            <span className='text-[#FF4800] '><BiSolidCircleHalf /></span>
+                            <span className='text-[#FF4800] '></span>
                             <h3>Free</h3>
                             <ul>
                                 <li>
                                     <span></span>
-                                    <span>{product.freepricingdetails}</span>
                                 </li>
                             </ul>
                         </div>
