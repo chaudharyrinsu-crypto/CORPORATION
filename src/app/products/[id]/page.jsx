@@ -6,6 +6,8 @@ import { useParams } from 'next/navigation'
 import React from 'react'
 import { LiaAngleDownSolid } from "react-icons/lia";
 import SolutionAbout from './components/SolutionAbout'
+import ExploreBox from './components/ExploreBox'
+import GrowthPart from './components/GrowthPart'
 
 const page = () => {
   const params = useParams()
@@ -36,6 +38,8 @@ const page = () => {
         </div>
       </section>
       <SolutionAbout product={product} />
+      <ExploreBox/>
+      <GrowthPart product={product}/>
     </>
   )
 }
