@@ -5,7 +5,7 @@ const AboutFeatures = ({ product }) => {
     return (
         <>
             <section className='font-hubot sm:py-15 py-10 lg:py-20'>
-                <div className='lg:px-0 px-5 lg:max-w-[1100px] mx-auto'>
+                <div className=' lg:max-w-[1100px] mx-auto'>
                     <div className='flex gap-8 lg:gap-15 flex-col lg:flex-row'>
                         <div className=''>
                             <h2 className='text-2xl font-semibold'>See why companies like to work with <span>{product.name}.</span></h2>

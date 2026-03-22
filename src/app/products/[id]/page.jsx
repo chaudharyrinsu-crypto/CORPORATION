@@ -8,6 +8,7 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 import SolutionAbout from './components/SolutionAbout'
 import ExploreBox from './components/ExploreBox'
 import GrowthPart from './components/GrowthPart'
+import Pricing from './components/Pricing'
 
 const page = () => {
   const params = useParams()
@@ -40,6 +41,7 @@ const page = () => {
       <SolutionAbout product={product} />
       <ExploreBox/>
       <GrowthPart product={product}/>
+      <Pricing product={product}/>
     </>
   )
 }
