@@ -34,7 +34,7 @@ const Pricing = ({ product }) => {
                         ))}
                     </div>
                     <div>
-                        <div className='flex sm:flex-row flex-col items-center justify-center gap-4 sm:gap-3 w-full font-semibold py-3'>
+                        <div className='flex sm:flex-row flex-col items-center justify-center gap-4 sm:gap-3 w-full font-semibold py-3 text-center'>
                             <Link className='bg-[#FF4800] hover:bg-[#C93700] px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300 text-white' href={``}>Demo premium editions</Link>
                             <Link className='border-2 border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300' href={``}>Start 14-day free trial</Link>
                         </div>

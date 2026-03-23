@@ -11,6 +11,7 @@ import GrowthPart from './components/GrowthPart'
 import Pricing from './components/Pricing'
 import Questions from './components/Questions'
 import BottomPart from './components/BottomPart'
+import NavBar from '@/app/components/NavBar'
 
 const page = () => {
   const params = useParams()
@@ -19,6 +20,7 @@ const page = () => {
 
   return (
     <>
+    <NavBar/>
       <section className='bg-[#F8F5EE] font-hubot border-b border-[#D9D9D8] text-center'>
         <div className='max-w-[1100px] sm:justify-start justify-center mx-auto py-5 lg:px-0 px-5 text-sm font-semibold flex gap-2 items-center'>
           <Link className='inline-block underline underline-offset-2 decoration-1' href={`/`}>Home</Link>

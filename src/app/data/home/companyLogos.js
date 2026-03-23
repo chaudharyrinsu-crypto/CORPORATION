@@ -1,0 +1,1 @@
+export const logos=['https://www.hubspot.com/hubfs/ebay-logo.svg','https://www.hubspot.com/hubfs/doordash-logo.svg','https://www.hubspot.com/hubfs/reddit-logo.svg','https://www.hubspot.com/hubfs/tripadvisor-logo.svg','https://www.hubspot.com/hubfs/eventbrite-logo.svg']
