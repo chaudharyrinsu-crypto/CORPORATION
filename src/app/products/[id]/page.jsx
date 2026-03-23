@@ -9,6 +9,7 @@ import SolutionAbout from './components/SolutionAbout'
 import ExploreBox from './components/ExploreBox'
 import GrowthPart from './components/GrowthPart'
 import Pricing from './components/Pricing'
+import Questions from './components/Questions'
 
 const page = () => {
   const params = useParams()
@@ -42,6 +43,7 @@ const page = () => {
       <ExploreBox/>
       <GrowthPart product={product}/>
       <Pricing product={product}/>
+      <Questions product={product}/>
     </>
   )
 }
