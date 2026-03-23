@@ -10,6 +10,7 @@ import ExploreBox from './components/ExploreBox'
 import GrowthPart from './components/GrowthPart'
 import Pricing from './components/Pricing'
 import Questions from './components/Questions'
+import BottomPart from './components/BottomPart'
 
 const page = () => {
   const params = useParams()
@@ -44,6 +45,7 @@ const page = () => {
       <GrowthPart product={product}/>
       <Pricing product={product}/>
       <Questions product={product}/>
+      <BottomPart product={product}/>
     </>
   )
 }
