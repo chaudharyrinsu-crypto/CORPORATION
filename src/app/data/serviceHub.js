@@ -80,15 +80,36 @@ export const serviceHub =
         }
     ],
     companylogos: ["https://www.hubspot.com/hs-fs/hubfs/Crunch-Fitness-Logo-2.png?width=2724&height=1579&name=Crunch-Fitness-Logo-2.png", "https://www.hubspot.com/hs-fs/hubfs/Tripadvisor_lockup_horizontal_secondary_registered%20(1)-2.png?width=3354&height=713&name=Tripadvisor_lockup_horizontal_secondary_registered%20(1)-2.png", "https://www.hubspot.com/hs-fs/hubfs/Kelly%20Services%20Logo-1.png?width=2400&height=1200&name=Kelly%20Services%20Logo-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/cms-hub-customer-wwf-logo-2.png?width=180&height=202&name=cms-hub-customer-wwf-logo-2.png", "https://www.hubspot.com/hs-fs/hubfs/2560px-Milwaukee_Logo.svg.png?width=3840&height=1874&name=2560px-Milwaukee_Logo.svg.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/logo-doordash-2x-1.png?width=568&height=276&name=logo-doordash-2x-1.png", "https://www.hubspot.com/hubfs/Imported%20sitepage%20images/casio-svg-logo.svg", "https://www.hubspot.com/hs-fs/hubfs/Panasonic_Group_logo.png?width=322&height=50&name=Panasonic_Group_logo.png"],
-    pricingiconsimage: ['https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg'],
-    pricingtitle: ['Free', 'Starter', 'Professional', 'Enterprise'],
-    pricingstatrswith:['No credit card required','Starts at','Starts at','Starts at'],
-    pricingmonth: ['$0/month', '$15 $20/month', '$890/month', '$3,600/month'],
-    pricingseat: ['', 'per seat*', '(3 seats included)', '(5 seats included)'],
-    freepricingdetails: ["Build landing pages", "Create blog posts with AI", "Get basic SEO tips"],
-    starterpricingdetails: ["Remove HubSpot branding", "Add website pages", "Personalize content"],
-    professionalpricingdetails: ["Remix content instantly", "Define your brand voice", "Deploy AI content agent"],
-    enterprisepricingdetails: ["Manage multiple sites", "Set up content approvals", "Customize your CMS"],
+   pricing:[
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg",
+        title:"Free",
+        statrswith:"No credit card required",
+        month:"$0/month",
+        details:["Automate email campaigns", "Create lead capture forms", "Set up live chat"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg",
+        title:"Starter",
+        statrswith:"Starts at",
+        month:"$15 $20/month",
+        details:["Set up calls-to-action", "Display multiple currencies", "Remove HubSpot branding"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg",
+        title:"Professional",
+        statrswith:"Starts at",
+        month:"$890/month",
+        details:["Personalize content", "Optimize search", "Deploy customer agent"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg",
+        title:"Enterprise",
+        statrswith:"Starts at",
+        month:"$3,600/month",
+        details:["Track revenue", "Run A/B tests", "Map customer journeys"]
+    }
+   ],
     questions: ["Where can I find the HubSpot CMS developer documentation?", "What is a content management system?", "How much does HubSpot's content marketing software cost?", "How does Content Hub work with Marketing Hub, Sales Hub, Service Hub, Commerce Hub, and Data Hub?", "What are HubSpot's popular content marketing features?", "How does Service Hub work with Marketing Hub, Sales Hub, Content Hub, and Data Hub?", " What kind of ROI can I expect from Content Hub?"],
     demo: {
         title: "Redefine Your Content Strategy",

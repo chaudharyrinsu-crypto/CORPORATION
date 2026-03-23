@@ -102,15 +102,37 @@ export const commerceHub =
         description: "See how teams are using Commerce Hub to accelerate the quote-to-cash process with automation.",
         thumbnail: "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/custom-video-thumbnails/WV_Commerce%20Hub_FINAL_2-thumb.jpeg?length=1920",
     },
-    companylogos: ["https://www.hubspot.com/hubfs/morehouse-logo-color.svg", "https://www.hubspot.com/hs-fs/hubfs/KaplanELC-full-4.webp?width=416&height=192&name=KaplanELC-full-4.webp", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GameSquare-1.png?width=526&height=94&name=GameSquare-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GoFundMe-Charity-1.png?width=364&height=128&name=GoFundMe-Charity-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/eventbrite-Mar-16-2023-05-12-14-9624-PM.png?width=640&height=250&name=eventbrite-Mar-16-2023-05-12-14-9624-PM.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/logo-doordash-2x-1.png?width=568&height=276&name=logo-doordash-2x-1.png", "https://www.hubspot.com/hs-fs/hubfs/Canadian_Red_Cross_logo.svg.png?width=3840&height=1134&name=Canadian_Red_Cross_logo.svg.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/amika%20for%20HS%20Website-1-1.png?width=580&height=260&name=amika%20for%20HS%20Website-1-1.png",],
-    pricingiconsimage: ['https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg'],
-    pricingtitle: ['Free', 'Starter', 'Professional', 'Enterprise'],
-    pricingstatrswith:['No credit card required','Starts at','Starts at','Starts at'],
-    pricingmonth: ['$0/month', '$15 $20/month', '$890/month', '$3,600/month'],
-    pricingseat: ['', 'per seat*', '(3 seats included)', '(5 seats included)'],
-    freepricingdetails: ["Invoices", "Payment links", "Subscriptions"],
-    professionalpricingdetails: ["Quotes", "Closing agent", "E-signature (25/user/month)", "Commerce analytics suite"],
-    enterprisepricingdetails: ["Advanced quote approvals", "E-signature (50/user/month)"],
+    companylogos: ["https://www.hubspot.com/hubfs/morehouse-logo-color.svg", "https://www.hubspot.com/hs-fs/hubfs/KaplanELC-full-4.webp?width=416&height=192&name=KaplanELC-full-4.webp", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GameSquare-1.png?width=526&height=94&name=GameSquare-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GoFundMe-Charity-1.png?width=364&height=128&name=GoFundMe-Charity-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/eventbrite-Mar-16-2023-05-12-14-9624-PM.png?width=640&height=250&name=eventbrite-Mar-16-2023-05-12-14-9624-PM.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/logo-doordash-2x-1.png?width=568&height=276&name=logo-doordash-2x-1.png", "https://www.hubspot.com/hs-fs/hubfs/Canadian_Red_Cross_logo.svg.png?width=3840&height=1134&name=Canadian_Red_Cross_logo.svg.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/amika%20for%20HS%20Website-1-1.png?width=580&height=260&name=amika%20for%20HS%20Website-1-1.png"],
+ pricing:[
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg",
+        title:"Free",
+        statrswith:"No credit card required",
+        month:"$0/month",
+        details:["Automate email campaigns", "Create lead capture forms", "Set up live chat"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg",
+        title:"Starter",
+        statrswith:"Starts at",
+        month:"$15 $20/month",
+        details:["Set up calls-to-action", "Display multiple currencies", "Remove HubSpot branding"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg",
+        title:"Professional",
+        statrswith:"Starts at",
+        month:"$890/month",
+        details:["Personalize content", "Optimize search", "Deploy customer agent"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg",
+        title:"Enterprise",
+        statrswith:"Starts at",
+        month:"$3,600/month",
+        details:["Track revenue", "Run A/B tests", "Map customer journeys"]
+    }
+   ],
     questions: ["What is Commerce Hub?", "What business problems does Commerce Hub solve?", "How does Commerce Hub work with Sales Hub?", "Do I need to use all of Commerce Hub (Quotes with CPQ, Billing, and Payments) together?", "How much time does it take to implement commerce software?", "What are popular commerce features?"],
     demo: {
         title: "Accelerate Your Quoting with AI",

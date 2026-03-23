@@ -75,15 +75,36 @@ export const dataHub =
         }
     ],
     companylogos: ["https://www.hubspot.com/hs-fs/hubfs/Liquidity%20Services%20Logo%20for%20HS%20Website.png?width=580&height=260&name=Liquidity%20Services%20Logo%20for%20HS%20Website.png", "https://www.hubspot.com/hs-fs/hubfs/Dickeys%20Barbecue%20Pit%20for%20HS%20Website.png?width=580&height=260&name=Dickeys%20Barbecue%20Pit%20for%20HS%20Website.png", "https://www.hubspot.com/hs-fs/hubfs/Golds%20Gym%20Logo%20for%20HS%20Website.png?width=580&height=260&name=Golds%20Gym%20Logo%20for%20HS%20Website.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/logo-doordash-2x-1.png?width=568&height=276&name=logo-doordash-2x-1.png", "https://www.hubspot.com/hs-fs/hubfs/Rakuten%20Advertising%20Logo%20for%20HS%20Website.png?width=580&height=260&name=Rakuten%20Advertising%20Logo%20for%20HS%20Website.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/eventbrite-Mar-16-2023-05-12-14-9624-PM.png?width=640&height=250&name=eventbrite-Mar-16-2023-05-12-14-9624-PM.png", "https://www.hubspot.com/hs-fs/hubfs/HBK%20CPA%20for%20HS%20Website.png?width=580&height=260&name=HBK%20CPA%20for%20HS%20Website.png", "https://www.hubspot.com/hubfs/Kahoot%20logo%20for%20HS%20website%20(new%20sizing).svg"],
-    pricingiconsimage: ['https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg'],
-    pricingtitle: ['Free', 'Starter', 'Professional', 'Enterprise'],
-    pricingstatrswith:['No credit card required','Starts at','Starts at','Starts at'],
-    pricingmonth: ['$0/month', '$15 $20/month', '$890/month', '$3,600/month'],
-    pricingseat: ['', 'per seat*', '(3 seats included)', '(5 seats included)'],
-    freepricingdetails: ["Sync data between apps", "Clean basic data issues", "Default field mappings", "Access all integrations"],
-    starterpricingdetails: ["Custom field mappings", "Advanced data sync", "Basic quality tools", "Email & chat support"],
-    professionalpricingdetails: ["Create datasets with AI", "Clean data at scale", "Automate processes", "Monitor data health"],
-    enterprisepricingdetails: ["Build advanced datasets", "Connect data warehouses and storage platforms", "Calculate advanced metrics", "Share data securely"],
+   pricing:[
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg",
+        title:"Free",
+        statrswith:"No credit card required",
+        month:"$0/month",
+        details:["Automate email campaigns", "Create lead capture forms", "Set up live chat"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg",
+        title:"Starter",
+        statrswith:"Starts at",
+        month:"$15 $20/month",
+        details:["Set up calls-to-action", "Display multiple currencies", "Remove HubSpot branding"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg",
+        title:"Professional",
+        statrswith:"Starts at",
+        month:"$890/month",
+        details:["Personalize content", "Optimize search", "Deploy customer agent"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg",
+        title:"Enterprise",
+        statrswith:"Starts at",
+        month:"$3,600/month",
+        details:["Track revenue", "Run A/B tests", "Map customer journeys"]
+    }
+   ],
     questions: ["How does Data Hub help with AI adoption?", "How does Data Hub pricing work?", "Who should use Data Hub?", "How does Data Hub work with other HubSpot products?"],
     demo: {
         title: "Become a Data Hero",

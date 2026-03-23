@@ -122,15 +122,36 @@ export const contentHub =
         }
     ],
     companylogos: ["https://www.hubspot.com/hs-fs/hubfs/babbel%20(2).png?width=1024&height=222&name=babbel%20(2).png", "https://www.hubspot.com/hs-fs/hubfs/myob%20(1).png?width=1024&height=1024&name=myob%20(1).png", "https://www.hubspot.com/hs-fs/hubfs/dickeys%20(1).png?width=1024&height=582&name=dickeys%20(1).png", "https://www.hubspot.com/hs-fs/hubfs/Kahoot_Logo.svg-1.png?width=2560&height=872&name=Kahoot_Logo.svg-1.png", "https://www.hubspot.com/hs-fs/hubfs/Canadian_Red_Cross_logo.svg.png?width=3840&height=1134&name=Canadian_Red_Cross_logo.svg.png", "https://www.hubspot.com/hs-fs/hubfs/KaplanELC-full-4.webp?width=416&height=192&name=KaplanELC-full-4.webp", "https://www.hubspot.com/hs-fs/hubfs/358201-Swapfiets_logos_RGB_Blue-1c3aa0-medium-1593634730.png?width=800&height=580&name=358201-Swapfiets_logos_RGB_Blue-1c3aa0-medium-1593634730.png"],
-    pricingiconsimage: ['https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg'],
-    pricingtitle: ['Free', 'Starter', 'Professional', 'Enterprise'],
-    pricingstatrswith:['No credit card required','Starts at','Starts at','Starts at'],
-    pricingmonth: ['$0/month', '$15 $20/month', '$890/month', '$3,600/month'],
-    pricingseat: ['', 'per seat*', '(3 seats included)', '(5 seats included)'],
-    freepricingdetails: ["Contact management", "Ticketing", "Team email"],
-    starterpricingdetails: ["Simple ticket automation", "Multiple ticket pipelines", "Live chat"],
-    professionalpricingdetails: ["Help desk workspace", "Customer success workspace", "Breeze customer agent", "Knowledge base"],
-    enterprisepricingdetails: ["Skill-based routing", "Conditional SLAs", "Interactive voice response", "Customer journey analytics"],
+    pricing: [
+        {
+            image: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg",
+            title: "Free",
+            statrswith: "No credit card required",
+            month: "$0/month",
+            details: ["Automate email campaigns", "Create lead capture forms", "Set up live chat"]
+        },
+        {
+            image: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg",
+            title: "Starter",
+            statrswith: "Starts at",
+            month: "$15 $20/month",
+            details: ["Set up calls-to-action", "Display multiple currencies", "Remove HubSpot branding"]
+        },
+        {
+            image: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg",
+            title: "Professional",
+            statrswith: "Starts at",
+            month: "$890/month",
+            details: ["Personalize content", "Optimize search", "Deploy customer agent"]
+        },
+        {
+            image: "https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg",
+            title: "Enterprise",
+            statrswith: "Starts at",
+            month: "$3,600/month",
+            details: ["Track revenue", "Run A/B tests", "Map customer journeys"]
+        }
+    ],
     questions: ["What is customer service software?", "Can I implement HubSpot’s software without dedicated programmers/developers?", "Will HubSpot help me and my team get started with the software?", "What makes HubSpot’s customer service software popular?", "My company already uses a CRM system. Can we integrate it with Service Hub?", "How does Service Hub work with Marketing Hub, Sales Hub, Content Hub, and Data Hub?", " team using Service Hub. What’s the pitch?", "What kind of ROI can I expect from Service Hub?", "How much time does it take to implement customer service software?"],
     demo: {
         title: "Start Scaling Your Customer Service Today",

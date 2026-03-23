@@ -138,15 +138,36 @@ export const smartCRMHub =
         }
     ],
     companylogos: ["https://www.hubspot.com/hubfs/weightwatchers.png", "https://www.hubspot.com/hs-fs/hubfs/MarineMax_Logo_NoTagline-1.png?width=1257&height=400&name=MarineMax_Logo_NoTagline-1.png", "https://www.hubspot.com/hs-fs/hubfs/Monday.com%20Logo.png?width=290&height=130&name=Monday.com%20Logo.png", "https://www.hubspot.com/hs-fs/hubfs/2560px-Fastsigns_logo.svg.png?width=2560&height=403&name=2560px-Fastsigns_logo.svg.png", "https://www.hubspot.com/hubfs/casio-svg-logo.svg", "https://www.hubspot.com/hs-fs/hubfs/amika%20for%20HS%20Website-1.png?width=290&height=130&name=amika%20for%20HS%20Website-1.png", "https://www.hubspot.com/hs-fs/hubfs/reddit-2.png?width=320&height=125&name=reddit-2.png", "https://www.hubspot.com/hs-fs/hubfs/Rakuten%20Advertising.png?width=1209&height=552&name=Rakuten%20Advertising.png",],
-    pricingiconsimage: ['https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg', 'https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg'],
-    pricingtitle: ['Free', 'Starter', 'Professional', 'Enterprise'],
-    pricingstatrswith:['No credit card required','Starts at','Starts at','Starts at'],
-    pricingmonth: ['$0/month', '$15 $20/month', '$890/month', '$3,600/month'],
-    pricingseat: ['', 'per seat*', '(3 seats included)', '(5 seats included)'],
-    freepricingdetails: ["Manage contacts, companies & deals", "Organize your pipeline", "Sync your data"],
-    starterpricingdetails: ["Remove HubSpot branding", "Configure user permissions", "Automatically enrich data"],
-    professionalpricingdetails: ["Help desk workspace", "Customer success workspace", "Breeze customer agent", "Knowledge base"],
-    enterprisepricingdetails: ["Skill-based routing", "Conditional SLAs", "Interactive voice response", "Customer journey analytics"],
+    pricing:[
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-free.svg",
+        title:"Free",
+        statrswith:"No credit card required",
+        month:"$0/month",
+        details:["Automate email campaigns", "Create lead capture forms", "Set up live chat"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-starter.svg",
+        title:"Starter",
+        statrswith:"Starts at",
+        month:"$15 $20/month",
+        details:["Set up calls-to-action", "Display multiple currencies", "Remove HubSpot branding"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-professional.svg",
+        title:"Professional",
+        statrswith:"Starts at",
+        month:"$890/month",
+        details:["Personalize content", "Optimize search", "Deploy customer agent"]
+    },
+    {
+        image:"https://www.hubspot.com/hubfs/WBZ%202025%20Rebrand/Hub%20Tier%20icons/tier-icon-enterprise.svg",
+        title:"Enterprise",
+        statrswith:"Starts at",
+        month:"$3,600/month",
+        details:["Track revenue", "Run A/B tests", "Map customer journeys"]
+    }
+   ],
     questions: ["How does HubSpot Smart CRM work with HubSpot’s core products?", "How can I purchase HubSpot Smart CRM?", "How is AI used in HubSpot’s Smart CRM?"],
     demo: {
         title: "It’s time for a smarter CRM.",
