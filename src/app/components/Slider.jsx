@@ -82,8 +82,6 @@ const Slider = () => {
                         <button disabled={isEnd} className={`custom-next cursor-pointer h-12 w-12 bg-[#F7F7F5] rounded-full flex items-center justify-center transition ${isEnd ? 'text-gray-400 cursor-not-allowed' : 'text-black '
                             }`}><LiaAngleRightSolid /></button>
                     </div>
-                    {/* <div className="custom-pagination flex justify-center mt-4"></div> */}
-
                 </div>
             </section>
         </>
