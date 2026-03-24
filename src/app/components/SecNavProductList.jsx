@@ -10,7 +10,7 @@ const SecNavProductList = () => {
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-8 py-4'>
                 {products.map((items, index) => (
                     <div key={index} className='group hover:bg-[#eeeeed] duration-300 lg:p-3 rounded-xl'>
-                        <Link className='flex gap-3 items-center justify-between' href={``}>
+                        <Link className='flex gap-3 items-center justify-between' href={`/products/${items.id}`}>
                             <div className='flex gap-3 lg:items-start items-center'>
                                 <img className='h-6' src={items.logo} alt="logo" />
                                 <div className='flex flex-col gap-1'>

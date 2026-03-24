@@ -5,7 +5,7 @@ const Hero = () => {
     return (
         <>
             <section className='font-hubot'>
-                <div className='sm:h-[520px] sm:py-0 py-8 relative flex items-center'>
+                <div className='sm:h-[520px] sm:py-0 py-8 relative -z-10 flex items-center'>
                     <img className='h-full w-full object-cover sm:block hidden' src="/homeHero.webp" alt="hero" />
                     <div className='w-full h-full absolute top-0 left-0 sm:bg-black/40 bg-[#042729] z-10'></div>
                     <div className='relative sm:absolute sm:top-1/2 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 flex items-center justify-center text-center w-full z-20  sm:px-0 px-8'>

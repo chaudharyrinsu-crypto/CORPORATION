@@ -32,7 +32,7 @@ otherfeatures: [
 export const marketingHub ={
     id: "software-marketing",
     name: "Marketing Hub",
-    heading: "Content Hub™",
+    heading: "Marketing Hub®",
     category: "Marketing automation software",
     title: "Marketing Software",
     description: "AI-powered tools to help you attract, convert, and engage high-intent visitors.",

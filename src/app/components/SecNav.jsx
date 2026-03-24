@@ -28,15 +28,15 @@ const SecNav = () => {
                         <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
                             <span className='hover:underline'>Products</span>
                             <span className={`${openMenu === 1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
-                            {/* <div className='absolute left-1/2 -translate-x-1/2 top-full w-full z-30'>
-                                <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm max-w-7xl mx-auto px-4'>
-                                    <SecNavSlideTop />
-                                    <SecNavProductList />
+
+                            {openMenu === 1 && (
+                                <div className='absolute z-50 left-1/2 -translate-x-1/2 top-full w-full bg-white'>
+                                    <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm max-w-7xl mx-auto px-4'>
+                                        <SecNavSlideTop />
+                                        <SecNavProductList />
+                                    </div>
                                 </div>
-                            </div> */}
-                            {/* {openMenu === 1 && (
-                               
-                            )} */}
+                            )}
                         </div>
                         <div onClick={() => toggleArrow(2)} className='flex lg:gap-1.5 justify-between items-center'>
                             <span className='hover:underline'>Solutions</span>
