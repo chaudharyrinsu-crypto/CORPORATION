@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import CompanyLogo from './components/CompanyLogo'
 import Slider from './components/Slider'
 import Products from './components/Products'
+import SecSlider from './components/SecSlider'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       {/* <CompanyLogo/> */}
       <Slider/>
       <Products/>
+      <SecSlider/>
     </>
   )
 }
