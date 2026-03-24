@@ -7,6 +7,7 @@ export const smallBusinessHub =
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Data%20Hub/EN/Data%20Hub%20-%20Data%20Studio%20Landing%20Page.webp?width=1920&height=1080&name=Data%20Hub%20-%20Data%20Studio%20Landing%20Page.webp",
     solutiontitle: "Data Management, Without Complexity",
     solutiondescription: "Combine scattered data, enhance data quality automatically, and activate customer intelligence across your entire HubSpot platform — with AI-powered ease.",
+    features: [" All your customer data in one place.", "Keep your data clean, connected, and actionable."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Data%20Hub/EN/Data%20Hub%20-%20Create%20Columns.webp?width=1400&height=1051&name=Data%20Hub%20-%20Create%20Columns.webp",

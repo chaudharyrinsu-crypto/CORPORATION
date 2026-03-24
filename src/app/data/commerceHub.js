@@ -10,6 +10,7 @@ export const commerceHub =
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/Quote%20view%20%E2%80%93%20Closing%20Agent%20(1).png?width=1920&height=1080&name=Quote%20view%20%E2%80%93%20Closing%20Agent%20(1).png",
     solutiontitle: "AI That Helps You Close Deals Faster",
     solutiondescription: "Time kills deals. Traditional CPQ (Configure, Price and Quote) tools slow reps with manual steps and complexity. Commerce Hub uses AI to generate branded quotes in seconds, so you can close, quote, bill, and collect payments faster — all in one customer platform.",
+    features: ["Make it easy for customers to pay you.", "Send quotes, collect payments, and manage subscriptions."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Commerce%20Hub/EN/CommerceHub_GenerateQuote.webp?width=567&height=425&name=CommerceHub_GenerateQuote.webp",

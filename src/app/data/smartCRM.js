@@ -10,6 +10,7 @@ export const smartCRMHub =
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/contact-record-wide@2x%20(1).webp?width=1920&height=1080&name=contact-record-wide@2x%20(1).webp",
     solutiontitle: "Your CRM Just Got Smarter",
     solutiondescription: "Other CRMs simply store data. HubSpot's Smart CRM understands it. Get the intelligent data foundation your teams need to take the best next action, every time.",
+    features: [" All your customer data in one place.", "Keep your data clean, connected, and actionable."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/Smart%20CRM%20-%20Company%20Record%20ReEnrichment.webp?width=567&height=425&name=Smart%20CRM%20-%20Company%20Record%20ReEnrichment.webp",

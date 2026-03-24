@@ -40,6 +40,7 @@ export const marketingHub ={
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Marketing%20Hub/EN/Marketing%20Hub%20-%20Marketing%20Studio.webp?width=1920&height=1080&name=Marketing%20Hub%20-%20Marketing%20Studio.webp",
     solutiontitle: "AI-Powered Marketing That Multiplies Results",
     solutiondescription: "Identify high-intent leads, automate personalized customer experiences, and launch cross-channel campaigns.",
+    features:["Attract and convert the right leads.","Run campaigns, personalize content, and track it all."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Marketing%20Hub/EN/Marketing%20Hub%20-%20Form%20Shortening.webp?width=567&height=426&name=Marketing%20Hub%20-%20Form%20Shortening.webp",

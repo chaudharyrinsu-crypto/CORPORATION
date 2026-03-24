@@ -10,6 +10,7 @@ export const serviceHub =
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Content%20Hub/EN/Content%20Hub%20-%20Landing%20Page%20Builder.webp?width=1920&height=1080&name=Content%20Hub%20-%20Landing%20Page%20Builder.webp",
     solutiontitle: "AI That Transforms Your Content Strategy",
     solutiondescription: "Create high-converting content, streamline content management, and gain actionable insights‌ — ‌all with Content Hub’s built-in AI.",
+     features: ["Streamline and scale support to serve customers faster.", "Drive retention with actionable insights, customer health scores, and real-time usage data."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Content%20Hub/EN/ContentHub_AIClipGenerator.webp?width=700&height=525&name=ContentHub_AIClipGenerator.webp",

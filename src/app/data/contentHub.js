@@ -10,6 +10,7 @@ export const contentHub =
     heroImage: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Service%20Hub/EN/service-hub-customer-success-wide.webp?width=1920&height=1080&name=service-hub-customer-success-wide.webp",
     solutiontitle: "Customer service and retention, powered by AI",
     solutiondescription: "Service Hub is AI-powered, omni-channel, and connected to marketing and sales data on a unified customer platform. The result? Easily scalable customer support and proactive customer retention that fuels your business growth.",
+    features: ["Create content that clicks with your audience.", "Build pages, publish content across channels, and stay on brand."],
     solutions: [
         {
             aboutimg: "https://www.hubspot.com/hs-fs/hubfs/WBZ%202025%20Rebrand/Product%20UIs/2025-%20Service%20Hub/EN/SvH%20Conversational%20Intelligence.webp?width=567&height=414&name=SvH%20Conversational%20Intelligence.webp",
