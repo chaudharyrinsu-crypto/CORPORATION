@@ -26,7 +26,7 @@ const SecSlider = () => {
             <div className='bg-white border border-[#D9D9D8] rounded-2xl px-4 py-3.5'>
               <img className='' src={secondSlider.logo} alt="logo" />
             </div>
-            <Link className='px-5 py-3.5 rounded-md sm:w-auto duration-300 sm:w-auto w-full text-center font-semibold border-2 border-black hover:bg-[#eeeeed] block' href={``}>Explore Breeze Agents</Link>
+            <Link className='px-5 py-3.5 rounded-md sm:w-auto duration-300 sm:w-auto w-full text-center font-semibold border-2 border-black hover:bg-[#EFB39C] block' href={``}>Explore Breeze Agents</Link>
           </div>
           <div className='flex justify-between items-center py-9'>
             <h2 className='lg:text-[40px] text-[32px] font-medium leading-11 justify-between w-[40%]'>{secondSlider.title}</h2>
