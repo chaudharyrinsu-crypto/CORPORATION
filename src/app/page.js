@@ -10,7 +10,7 @@ import CaseStudy from './components/CaseStudy'
 
 const page = () => {
   return (
-    <>
+    <div  className='tracking-wide font-hubot'>
       <NavBar/>
       <Hero/>
       {/* <CompanyLogo/> */}
@@ -19,7 +19,7 @@ const page = () => {
       <SecSlider/>
       <Integration/>
       <CaseStudy/>
-    </>
+    </div>
   )
 }
 

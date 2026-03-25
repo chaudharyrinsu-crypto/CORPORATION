@@ -5,7 +5,7 @@ import ProductList from './ProductList'
 const Products = () => {
     return (
         <>
-            <section className='font-hubot bg-[#FCFCFA] sm:pb-20 pb-15 lg:pb-25'>
+            <section className='font-hubot bg-[#FCFCFA] sm:pb-20 pb-15 lg:pb-25 tracking-wide'>
                 <div className='lg:px-0 sm px-5 sm:max-w-[1100px] mx-auto '>
                     <div className='flex 2md:flex-row flex-col gap-7'>
                         <div className='2md:w-[30%] w-auto bg-[#FCFCFA] flex flex-col justify-start gap-6 sm:sticky 2md:top-6 top-0 self-start'>
