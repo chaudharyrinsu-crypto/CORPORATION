@@ -20,8 +20,8 @@ const SecSlider = () => {
   const swiperRef = useRef(null)
   return (
     <>
-      <section className='bg-gradient-to-r from-[#FCCCD1] via-[#FBDED8] to-[#FDB89C] py-20 font-hubot'>
-        <div className='lg:px-0 px-5 sm:max-w-[1100px] mx-auto'>
+      <section className='bg-linear-to-r from-[#FCCCD1] via-[#FBDED8] to-[#FDB89C] py-20 font-hubot'>
+        <div className='lg:px-0 px-5 lg:max-w-[1100px] mx-auto'>
           <div className='flex sm:gap-0 gap-5 sm:flex-row flex-col justify-start sm:justify-between items-start sm:items-center'>
             <div className='bg-white border border-[#D9D9D8] rounded-2xl px-4 py-3.5'>
               <img className='' src={secondSlider.logo} alt="logo" />
@@ -32,13 +32,27 @@ const SecSlider = () => {
             <h2 className='lg:text-[40px] text-[32px] font-medium leading-11 justify-between w-[40%]'>{secondSlider.title}</h2>
             <p className='tracking-wide w-[40%] leading-7'>{secondSlider.description}</p>
           </div>
-          <div className='py-7 relative'>
+          <div className='py-7 relative lg:max-w-[950px] mx-auto'>
             <Swiper
               modules={[Navigation]}
-              slidesPerView={3}
-              centeredSlides={true}
+              // slidesPerView={3}
+              centeredSlides={false}
               loop={true}
-              spaceBetween={20}
+              spaceBetween={2}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1,
+                  centeredSlides: false,
+                },
+                768: {
+                  slidesPerView: 1,
+                  centeredSlides: false,
+                },
+                1150: {
+                  slidesPerView: 3,
+                  centeredSlides: true,
+                },
+              }}
               loopAdditionalSlides={3}
               loopedSlides={secondSlider.slider.length}
               initialSlide={1}
@@ -60,16 +74,19 @@ const SecSlider = () => {
                 return (
                   <SwiperSlide key={i} className='text-center '>
                     <div
-                      className={`relative transition-all duration-500 rounded-2xl p-6 flex flex-col items-center justify-center  ${isActive
-                        ? 'scale-105 opacity-100 bg-white'
-                        : 'scale-90 opacity-80 bg-white'
-                        }`}>
+                      style={{ backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
+                      className={`relative overflow-hidden transform-gpu will-change-transform transition-transform duration-500 rounded-2xl p-6 flex flex-col items-center justify-center cursor-grab lg:w-auto w-[350px] mx-auto ${isActive
+                          ? 'scale-105 opacity-100 bg-white'
+                          : 'scale-90 opacity-60 bg-white'
+                        }`}
+                    >
 
-                      {!isActive && (
-                        <div className="absolute inset-0 bg-white/40 rounded-2xl z-10"></div>
-                      )}
+                      <div
+                        className={`absolute inset-0 bg-white/40 z-10 transition-opacity duration-300 ${isActive ? 'opacity-0' : 'opacity-100'
+                          }`}
+                      ></div>
 
-                      <div className="relative z-20 flex flex-col items-center gap-4">
+                      <div className="relative z-20 flex flex-col items-center gap-6">
 
                         <img
                           className='w-[300px] rounded-2xl object-contain'
@@ -98,10 +115,12 @@ const SecSlider = () => {
 
             </Swiper>
             {/* ✅ Buttons OUTSIDE */}
-            <button className={`custom-prev cursor-pointer h-12 w-12 bg-[#F7F7F5] hover:bg-[#EFC3C7] duration-300 rounded-full flex items-center justify-center text-2xl absolute -left-15 top-1/2 -translate-y-1/2`}>
-              <LiaAngleLeftSolid />
-            </button>
-            <button className={`custom-next cursor-pointer h-12 w-12 bg-[#F7F7F5] hover:bg-[#EFC3C7] duration-300 rounded-full flex items-center justify-center text-2xl transition absolute -right-15 top-1/2 -translate-y-1/2`}><LiaAngleRightSolid /></button>
+            <div className='lg:pt-0 pt-5'>
+              <button className={`custom-prev cursor-pointer h-12 w-12 bg-[#F7F7F5] hover:bg-[#EFC3C7] duration-300 rounded-full flex items-center justify-center text-2xl absolute left-0 lg:-left-15  lg:top-1/2 lg:-translate-y-1/2`}>
+                <LiaAngleLeftSolid />
+              </button>
+              <button className={`custom-next cursor-pointer h-12 w-12 bg-[#F7F7F5] hover:bg-[#EFC3C7] duration-300 rounded-full flex items-center justify-center text-2xl transition absolute  lg:-right-15 right-0 lg:top-1/2  lg:-translate-y-1/2`}><LiaAngleRightSolid /></button>
+            </div>
           </div>
 
         </div>

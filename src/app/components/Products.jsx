@@ -6,7 +6,7 @@ const Products = () => {
     return (
         <>
             <section className='font-hubot bg-[#FCFCFA] sm:pb-20 pb-15 lg:pb-25'>
-                <div className='lg:px-0 px-5 sm:max-w-[1100px] mx-auto '>
+                <div className='lg:px-0 sm px-5 sm:max-w-[1100px] mx-auto '>
                     <div className='flex 2md:flex-row flex-col gap-7'>
                         <div className='2md:w-[30%] w-auto bg-[#FCFCFA] flex flex-col justify-start gap-6 sm:sticky 2md:top-6 top-0 self-start'>
                             <div className='flex items-center justify-center border border-[#D9D9D8] rounded-sm px-2 py-1.5 text-center font-semibold text-sm bg-white max-w-[150px]'>

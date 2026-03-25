@@ -35,16 +35,6 @@ export const secondSlider = {
             title: "Prospecting Agent",
             description: "Research, personalize, and execute sales outreach at scale — instantly.",
             image: "https://www.hubspot.com/hs-fs/hubfs/prospecting-agent-en@2x.png?width=640&height=640&name=prospecting-agent-en@2x.png"
-        },
-        {
-            title: "Customer Agent",
-            description: "Resolve 65% of your customer inquiries automatically.",
-            image: "https://www.hubspot.com/hs-fs/hubfs/customer-agent-en@2x.png?width=640&height=640&name=customer-agent-en@2x.png"
-        },
-        {
-            title: "Data Agent",
-            description: "Get instant answers to custom questions about your customers.",
-            image: "https://www.hubspot.com/hs-fs/hubfs/data-hub-en@2x.png?width=640&height=640&name=data-hub-en@2x.png"
-        },
+        }
     ]
 }

@@ -5,6 +5,7 @@ import CompanyLogo from './components/CompanyLogo'
 import Slider from './components/Slider'
 import Products from './components/Products'
 import SecSlider from './components/SecSlider'
+import Integration from './components/Integration'
 
 const page = () => {
   return (
@@ -15,6 +16,7 @@ const page = () => {
       <Slider/>
       <Products/>
       <SecSlider/>
+      <Integration/>
     </>
   )
 }
