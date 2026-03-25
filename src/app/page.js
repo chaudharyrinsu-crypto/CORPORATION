@@ -7,6 +7,7 @@ import Products from './components/Products'
 import SecSlider from './components/SecSlider'
 import Integration from './components/Integration'
 import CaseStudy from './components/CaseStudy'
+import Vote from './components/Vote'
 
 const page = () => {
   return (
@@ -19,6 +20,7 @@ const page = () => {
       <SecSlider/>
       <Integration/>
       <CaseStudy/>
+      <Vote/>
     </div>
   )
 }
