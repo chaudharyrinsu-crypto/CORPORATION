@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Hubot_Sans } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import Footer from "./components/footer/Footer";
 
 const hubot=Hubot_Sans({
   variable:"--font-hubot",
@@ -32,6 +33,7 @@ export default function RootLayout({ children }) {
       >
         {/* <NavBar/> */}
         {children}
+        <Footer/>
       </body>
     </html>
   );
