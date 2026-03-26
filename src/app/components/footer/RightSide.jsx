@@ -9,9 +9,9 @@ import { GoArrowLeft } from "react-icons/go";
 const RightSide = ({ openMenu, setOpenMenu, toggleArrow }) => {
     return (
         <>
-            <div className='flex 2md:flex-row flex-col  2md:justify-start justify-between gap-5 lg:gap-15 py-3'>
+            <div className='flex 2md:flex-row flex-col  2md:justify-start justify-between gap-5 lg:gap-15 2md:py-3'>
                 <div className=''>
-                    <div onClick={() => toggleArrow(2)} className={`${openMenu === 2 ? 'items-center border-none' : 'items-start '} flex justify-between border-b border-[#7c7c7c] 2md:border-none 2md:py-0 py-4 2md:px-0 px-5 text-[#eeeded]`}>
+                    <div onClick={() => toggleArrow(2)} className={`${openMenu === 2 ? 'items-center border-none' : 'items-start '} flex justify-between border-b border-[#7c7c7c] 2md:border-none 2md:pb-0 pb-4 2md:px-0 px-5 text-[#eeeded]`}>
                         <Link href={`/`} className={`${openMenu === 2 ? 'block' : 'hidden'} flex gap-1 items-center`}>
                             <span className='text-[18px]'><GoArrowLeft /></span>
                             <span className=' border-b-2 border-[#FF4800] text-sm font-bold'>Back</span>
