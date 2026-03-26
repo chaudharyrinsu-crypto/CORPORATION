@@ -28,9 +28,9 @@ const SecSlider = () => {
             </div>
             <Link className='px-5 py-3.5 rounded-md sm:w-auto duration-300 sm:w-auto w-full text-center font-semibold border-2 border-black hover:bg-[#EFB39C] block' href={``}>Explore Breeze Agents</Link>
           </div>
-          <div className='flex justify-between items-center py-9'>
-            <h2 className='lg:text-[40px] text-[32px] font-medium leading-11 justify-between w-[40%]'>{secondSlider.title}</h2>
-            <p className='tracking-wide w-[40%] leading-7'>{secondSlider.description}</p>
+          <div className='flex sm:flex-row flex-col justify-start sm:justify-between items-start sm:items-center py-9 gap-5 2md:gap-20 sm:gap-10 lg:gap-40'>
+            <h2 className='lg:text-[40px] text-[32px] font-medium leading-11 justify-between w-full sm:w-1/2'>{secondSlider.title}</h2>
+            <p className='tracking-wide w-full sm:w-1/2 leading-7'>{secondSlider.description}</p>
           </div>
           <div className='py-7 relative lg:max-w-[950px] mx-auto'>
             <Swiper
@@ -76,13 +76,13 @@ const SecSlider = () => {
                     <div
                       style={{ backfaceVisibility: 'hidden', transform: 'translateZ(0)' }}
                       className={`relative overflow-hidden transform-gpu will-change-transform transition-transform duration-500 rounded-2xl p-6 flex flex-col items-center justify-center cursor-grab lg:w-auto w-[350px] mx-auto ${isActive
-                          ? 'scale-105 opacity-100 bg-white'
-                          : 'scale-90 opacity-60 bg-white'
+                        ? 'scale-105 opacity-100 bg-white'
+                        : 'scale-90 opacity-60 bg-white'
                         }`}
                     >
 
                       <div
-                        className={`absolute inset-0 bg-white/40 z-10 transition-opacity duration-300 ${isActive ? 'opacity-0' : 'opacity-100'
+                        className={`absolute rounded-2xl inset-0 bg-white/40 z-10 transition-opacity duration-300 ${isActive ? 'opacity-0' : 'opacity-100'
                           }`}
                       ></div>
 

@@ -6,7 +6,7 @@ import Link from 'next/link'
 const CaseStudy = () => {
     return (
         <>
-            <section className='bg-[#FCFCFA] py-15 font-hubot lg:px-0 px-5 tracking-wide'>
+            <section className='bg-[#FCFCFA] pt-15 font-hubot lg:px-0 px-5 tracking-wide'>
                 <div className='lg:max-w-[1100px] mx-auto'>
                     <div className='flex sm:flex-row flex-col items-start sm:gap-0 gap-5 sm:items-center justify-start sm:justify-between'>
                         <span className='border border-[#D9D9D8] rounded-sm px-2 py-1.5 text-center font-semibold text-sm bg-white'>Case Studies</span>

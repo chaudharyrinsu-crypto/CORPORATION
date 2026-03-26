@@ -8,6 +8,7 @@ import SecSlider from './components/SecSlider'
 import Integration from './components/Integration'
 import CaseStudy from './components/CaseStudy'
 import Vote from './components/Vote'
+import Bottom from './components/Bottom'
 
 const page = () => {
   return (
@@ -21,6 +22,7 @@ const page = () => {
       <Integration/>
       <CaseStudy/>
       <Vote/>
+      <Bottom/>
     </div>
   )
 }
