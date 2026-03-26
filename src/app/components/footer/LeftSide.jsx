@@ -1,13 +1,14 @@
 'use client'
 import React from 'react'
 import Link from 'next/link';
+import { popularFeatures } from '@/app/data/home/footer';
 
 const LeftSide = () => {
     return (
         <>
-            <div className='border-r border-[#bab9b9]'>
-                <h2 className='pb-4 text-[#eeeded] text-sm font-semibold'>Popular Features</h2>
-                <div className='grid grid-cols-2 '>
+            <div className=''>
+                <h2 className='pb-5 text-[#eeeded] text-sm font-semibold'>Popular Features</h2>
+                <div className='flex gap-10'>
                     <ul className='flex flex-col gap-3'>
                         {popularFeatures.firstFeature?.map((item, index) => (
                             <li key={index} className='text-[12px] hover:text-[#eeeded] hover:underline font-semibold '>
