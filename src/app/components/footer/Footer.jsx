@@ -12,9 +12,10 @@ import RightSide from './RightSide';
 
 
 const Footer = () => {
+    const [openMenu, setOpenMenu] = useState(null)
+    
     const socialIcons = [<FaFacebookF />, <FaInstagram />, <ImYoutube />, <BsTwitterX />, <FaLinkedinIn />, <FaReddit />, <FaTiktok />]
 
-    const [openMenu, setOpenMenu] = useState(null)
     const toggleArrow = (index) => {
         setOpenMenu(openMenu === index ? null : index)
     }

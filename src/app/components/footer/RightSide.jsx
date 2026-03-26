@@ -5,7 +5,7 @@ import { popularFeatures } from '@/app/data/home/footer';
 import { LiaAngleDownSolid } from "react-icons/lia";
 import { GoArrowLeft } from "react-icons/go";
 
-const RightSide = () => {
+const RightSide = ({openMenu,setOpenMenu,toggleArrow}) => {
     // const [openMenu, setOpenMenu] = useState(null)
     // const toggleArrow = (index) => {
     //     setOpenMenu(openMenu === index ? null : index)
