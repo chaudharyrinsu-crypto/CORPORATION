@@ -2,14 +2,19 @@
 import React from 'react'
 import Link from 'next/link';
 import { popularFeatures } from '@/app/data/home/footer';
+import { LiaAngleDownSolid } from "react-icons/lia";
 
 const RightSide = () => {
     return (
         <>
-            <div className='flex gap-5 lg:gap-15'>
+            <div className='flex 2md:flex-row flex-col  2md:justify-start justify-between gap-5 lg:gap-15'>
                 <div className=''>
-                    <h2 className='pb-5 text-[#eeeded] text-sm font-semibold'>Free Tools</h2>
-                    <ul className='flex flex-col gap-3'>
+                    <div className='flex justify-between border-b border-[#7c7c7c] 2md:pb-0 pb-4 2md:px-0 px-5'>
+                        <h2 className='2md:pb-5  text-[#eeeded] text-sm font-semibold'>Free Tools</h2>
+                        <span className={`2md:hidden block -rotate-90 text-xl `}><LiaAngleDownSolid /></span>
+                    </div>
+
+                    <ul className='hidden 2md:flex flex-col gap-3'>
                         {popularFeatures.freeTools?.map((item, index) => (
                             <li key={index} className='text-[12px] hover:text-[#eeeded] hover:underline font-semibold '>
                                 <Link className='block' href={``}>{item}</Link>
@@ -18,8 +23,12 @@ const RightSide = () => {
                     </ul>
                 </div>
                 <div className=''>
-                    <h2 className='pb-5 text-[#eeeded] text-sm font-semibold'>Company</h2>
-                    <ul className='flex flex-col gap-3'>
+                    <div className='flex justify-between border-b border-[#7c7c7c] 2md:pb-0 pb-4 2md:px-0 px-5'>
+                        <h2 className='2md:pb-5  text-[#eeeded] text-sm font-semibold'>Company</h2>
+                        <span className={`2md:hidden block -rotate-90 text-xl`}><LiaAngleDownSolid /></span>
+                    </div>
+
+                    <ul className='hidden 2md:flex flex-col gap-3'>
                         {popularFeatures.company?.map((item, index) => (
                             <li key={index} className='text-[12px] hover:text-[#eeeded] hover:underline font-semibold '>
                                 <Link href={``}>{item}</Link>
@@ -27,10 +36,14 @@ const RightSide = () => {
                         ))}
                     </ul>
                 </div>
-                <div className='space-y-25 pl-1'>
+                <div className='lg:space-y-25 2md:space-y-20 space-y-5 2md:pl-1'>
                     <div>
-                        <h2 className='pb-5 text-[#eeeded] text-sm font-semibold'>Customers</h2>
-                        <ul className='flex flex-col gap-3'>
+                        <div className='flex justify-between border-b border-[#7c7c7c] 2md:pb-0 pb-4 2md:px-0 px-5'>
+                            <h2 className='2md:pb-5 text-[#eeeded] text-sm font-semibold'>Customers</h2>
+                            <span className={`2md:hidden block -rotate-90 text-xl`}><LiaAngleDownSolid /></span>
+                        </div>
+
+                        <ul className='hidden 2md:flex flex-col gap-3'>
                             {popularFeatures.customer?.map((item, index) => (
                                 <li key={index} className='text-[12px] hover:text-[#eeeded] hover:underline font-semibold '>
                                     <Link className='block' href={``}>{item}</Link>
@@ -39,8 +52,13 @@ const RightSide = () => {
                         </ul>
                     </div>
                     <div className=''>
-                        <h2 className='pb-5 text-[#eeeded] text-sm font-semibold'>Partners</h2>
-                        <ul className='flex flex-col gap-3'>
+                        <div className='flex justify-between border-b border-[#7c7c7c] 2md:pb-0 pb-4 2md:px-0 px-5'>
+                            <h2 className='2md:pb-5 
+                             text-[#eeeded] text-sm font-semibold'>Partners</h2>
+                            <span className={`2md:hidden block -rotate-90 text-xl`}><LiaAngleDownSolid /></span>
+                        </div>
+
+                        <ul className='hidden 2md:flex flex-col gap-3'>
                             {popularFeatures.partner?.map((item, index) => (
                                 <li key={index} className='text-[12px] hover:text-[#eeeded] hover:underline font-semibold '>
                                     <Link className='block' href={``}>{item}</Link>

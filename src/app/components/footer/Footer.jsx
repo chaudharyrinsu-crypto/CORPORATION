@@ -14,13 +14,13 @@ const Footer = () => {
     const socialIcons = [<FaFacebookF />, <FaInstagram />, <ImYoutube />, <BsTwitterX />, <FaLinkedinIn />, <FaReddit />, <FaTiktok />]
     return (
         <>
-            <section className='lg:px-0 px-5 bg-[#1F1F1F] py-10 text-[#bab9b9]'>
+            <section className='lg:px-0 2md:px-5 bg-[#1F1F1F] 2md:pt-10 pb-10 pt-0 2md:text-[#bab9b9] text-[#6d6d6d]'>
                 <div className='lg:max-w-[1000px] mx-auto tracking-wide'>
-                    <div className='flex  w-full'>
-                        <div className='border-r border-[#7c7c7c] w-[40%] pr-10'>
+                    <div className='flex 2md:flex-row flex-col 2md:gap-0 gap-5 w-full'>
+                        <div className=' 2md:border-r border-[#7c7c7c] 2md:w-[40%] w-full 2md:pr-10'>
                             <LeftSide />
                         </div>
-                        <div className=' w-[60%] pl-10'>
+                        <div className=' 2md:w-[60%] w-full 2md:pl-10'>
                             <RightSide />
                         </div>
 
