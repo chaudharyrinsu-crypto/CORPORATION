@@ -5,16 +5,17 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 import { TfiSearch } from "react-icons/tfi";
 import SecNavSlideTop from './SecNavSlideTop';
 import SecNavProductList from './SecNavProductList';
+import Breeze from './Breeze';
 
 const SecNav = () => {
     const [openMenu, setOpenMenu] = useState(null)
-    
+
     const toggleArrow = (index) => {
         setOpenMenu(openMenu === index ? null : index)
     }
     return (
-        <div className='max-w-[1100px] mx-auto'>
-        
+        <div className='w-full  mx-auto'>
+
             <div className='flex lg:flex-row flex-col lg:order-2 order-1 justify-between items-center lg:text-[16px] text-sm lg:py-4 py-1 font-hubot'>
                 <ul className='flex lg:flex-row flex-col gap-6 lg:gap-10 justify-between items-center w-full lg:w-auto'>
                     <li className='lg:flex justify-between w-full hidden'>
@@ -27,15 +28,16 @@ const SecNav = () => {
                         </div>
                     </li>
                     <li className='flex lg:flex-row flex-col justify-between gap-8 w-full lg:py-0 py-5'>
-                        <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
+                        <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer bg-amber-300 '>
                             <span className='hover:underline'>Products</span>
                             <span className={`${openMenu === 1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
 
                             {openMenu === 1 && (
-                                <div onMouseLeave={()=>setOpenMenu(null)} className='absolute z-50 left-1/2 -translate-x-1/2 top-full w-full bg-white transition duration-300'>
+                                <div onMouseLeave={() => setOpenMenu(null)} className='absolute z-50 left-1/2 -translate-x-1/2 lg:top-full top-30 w-full bg-white transition duration-300'>
                                     <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm max-w-7xl mx-auto px-4'>
                                         <SecNavSlideTop />
                                         <SecNavProductList />
+                                        <Breeze />
                                     </div>
                                 </div>
                             )}
@@ -60,9 +62,9 @@ const SecNav = () => {
 
                 </ul>
                 <div className='lg:w-auto w-full text-[12px] font-bold lg:border-none border-t border-[#D9D9D8] lg:py-0 py-4 flex flex-col gap-4 text-center'>
-                    <div className='flex gap-5'>
-                        <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4 flex items-center py-1.5 rounded-md lg:w-auto w-1/2' href={``}>Get a demo</Link>
-                        <Link className='border hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800]  flex items-center px-4 py-2.5 rounded-md lg:w-auto w-1/2 duration-500 ' href={``}>Get started free</Link>
+                    <div className='flex sm:flex-row flex-col gap-5'>
+                        <Link className='bg-[#FF4800] hover:bg-[#C93700] duration-500 text-white px-4 flex items-center py-2.5 rounded-md lg:w-auto sm:w-1/2 w-full' href={``}>Get a demo</Link>
+                        <Link className='border hover:bg-[#FCECE6] hover:border-[#C93700] border-[#FF4800] hover:text-[#C93700] text-[#FF4800]  flex items-center px-4 py-2.5 rounded-md lg:w-auto sm:w-1/2 w-full duration-500 ' href={``}>Get started free</Link>
                     </div>
                     <div className='lg:hidden block border-t border-b border-[#D9D9D8] py-4'>
                         <Link className=' bg-[#1f1f1f]  text-white  px-4 py-2.5 rounded-md block w-full duration-500 ' href={``}>Log in</Link>

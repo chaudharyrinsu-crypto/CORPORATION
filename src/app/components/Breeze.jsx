@@ -7,7 +7,7 @@ import { breeze } from '../data/breeze';
 const Breeze = () => {
     return (
         <>
-            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 py-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-3 gap-8 py-4 border-t border-[#D9D9D8]'>
                 {breeze.map((items, index) => (
                     <div key={index} className='group hover:bg-[#eeeeed] duration-300 lg:p-3 rounded-xl'>
                         <Link className='flex gap-3 items-center justify-between' href={``}>

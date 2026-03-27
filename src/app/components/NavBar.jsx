@@ -11,22 +11,31 @@ import { RxCross1 } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { FiMenu } from "react-icons/fi";
 import SecNav from './SecNav';
+import { GoArrowLeft } from "react-icons/go";
 
 const NavBar = () => {
     const [showInput, setShowInput] = useState(false)
     const [clickBar, setClickBar] = useState(null)
     return (
         <>
-            <nav className='font-hubot font-normal lg:font-semibold relative z-10 shadow-md shadow-black/5'>
+            <nav className='font-hubot  font-normal lg:font-semibold relative z-10 shadow-md shadow-black/5'>
                 <div className={` max-w-[1100px] mx-auto lg:px-0 px-5`}>
                     <div className='flex justify-between w-full py-4 lg:hidden'>
+                        <Link href={`/`} className={`${clickBar ? 'flex lg:hidden' : 'hidden'}  gap-1 items-center`}>
+                            <span className='text-[18px]'><GoArrowLeft /></span>
+                            <span className=' border-b-2 border-[#FF4800] text-sm font-bold'>Back</span>
+                        </Link>
                         <Link href={`/`}><img className='h-7' src="/logo.svg" alt="" /></Link>
+
                         <span onClick={() => setClickBar(!clickBar)} className={`text-4xl cursor-pointer ${clickBar ? 'rotate-90' : ''} duration-500 lg:hidden block`}>{clickBar ? <RxCross2 /> : <FiMenu />}</span>
+                    </div>
+                    <div className={`${clickBar ? 'block' : 'hidden'} lg:hidden`}>
+                        <SecNav />
                     </div>
                     <div className={`${clickBar ? 'flex' : 'hidden'} lg:flex flex-col`}>
                         <div className='relative lg:w-auto w-full order-2 lg:order-1'>
                             <div className={`py-4 text-sm lg:text-[12px] flex justify-between items-center ${showInput ? "opacity-0" : "opacity-100 relative z-20"} duration-500 lg:w-auto w-full`}>
-                                <ul className='flex lg:flex-row flex-col gap-8 justify-between items-center lg:w-auto w-full'>
+                                <ul className='flex lg:flex-row flex-col gap-8 justify-between items-center lg:w-auto w-full lg:pb-0 pb-10'>
                                     <li className='flex lg:gap-1.5 justify-between items-center cursor-pointer lg:w-auto w-full'>
                                         <span className='lg:block hidden'><MdOutlineSettingsVoice /></span>
                                         <span className='hover:underline'>English</span>
@@ -71,12 +80,15 @@ const NavBar = () => {
                                 <span onClick={() => setShowInput(false)} className={`text-2xl cursor-pointer ${showInput ? "w-0" : "w-full"} duration-500 transition-all ease-in-out`}><RxCross1 /></span>
                             </div>
                         </div>
-                        {/* <SecNav /> */}
+                    </div>
+
+                    <div className={`lg:block hidden`}>
+                        <SecNav />
                     </div>
                 </div>
-                <div className='max-w-[1250px] mx-auto lg:px-0 px-5 relative'>
-                    <SecNav />
-                </div>
+                {/* <div className={`${clickBar ? 'flex' : 'hidden'} lg:flex flex-col max-w-[1250px] mx-auto lg:px-0 px-5 relative `}>
+                    <SecNav clickBar={clickBar} setClickBar={setClickBar} />
+                </div> */}
             </nav>
 
         </>
