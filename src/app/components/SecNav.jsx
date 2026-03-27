@@ -33,8 +33,8 @@ const SecNav = () => {
                             <span className={`${openMenu === 1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
 
                             {openMenu === 1 && (
-                                <div onMouseLeave={() => setOpenMenu(null)} className='absolute z-50 left-1/2 -translate-x-1/2 lg:top-full top-30 w-full bg-white transition duration-300'>
-                                    <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm max-w-7xl mx-auto px-4'>
+                                <div onMouseLeave={() => setOpenMenu(null)} className={`${openMenu ? "right-0" : "-right-full"} absolute z-50 lg:right-0 lg:top-full top-30 w-full bg-white transition duration-300`}>
+                                    <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm mx-auto px-4'>
                                         <SecNavSlideTop />
                                         <SecNavProductList />
                                         <Breeze />
