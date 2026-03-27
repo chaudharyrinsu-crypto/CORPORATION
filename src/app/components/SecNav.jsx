@@ -8,12 +8,14 @@ import SecNavProductList from './SecNavProductList';
 
 const SecNav = () => {
     const [openMenu, setOpenMenu] = useState(null)
+    
     const toggleArrow = (index) => {
         setOpenMenu(openMenu === index ? null : index)
     }
     return (
-        <>
-            <div className='flex lg:flex-row flex-col lg:order-2 order-1 justify-between items-center lg:text-[16px] text-sm lg:py-4 py-1 relative font-hubot'>
+        <div className='max-w-[1100px] mx-auto'>
+        
+            <div className='flex lg:flex-row flex-col lg:order-2 order-1 justify-between items-center lg:text-[16px] text-sm lg:py-4 py-1 font-hubot'>
                 <ul className='flex lg:flex-row flex-col gap-6 lg:gap-10 justify-between items-center w-full lg:w-auto'>
                     <li className='lg:flex justify-between w-full hidden'>
                         <Link href={`/`}><img className='h-7' src="/logo.svg" alt="" /></Link>
@@ -30,7 +32,7 @@ const SecNav = () => {
                             <span className={`${openMenu === 1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
 
                             {openMenu === 1 && (
-                                <div className='absolute z-50 left-1/2 -translate-x-1/2 top-full w-full bg-white'>
+                                <div onMouseLeave={()=>setOpenMenu(null)} className='absolute z-50 left-1/2 -translate-x-1/2 top-full w-full bg-white transition duration-300'>
                                     <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm max-w-7xl mx-auto px-4'>
                                         <SecNavSlideTop />
                                         <SecNavProductList />
@@ -67,7 +69,7 @@ const SecNav = () => {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

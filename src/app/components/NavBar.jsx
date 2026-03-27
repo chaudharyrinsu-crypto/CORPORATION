@@ -71,8 +71,11 @@ const NavBar = () => {
                                 <span onClick={() => setShowInput(false)} className={`text-2xl cursor-pointer ${showInput ? "w-0" : "w-full"} duration-500 transition-all ease-in-out`}><RxCross1 /></span>
                             </div>
                         </div>
-                        <SecNav />
+                        {/* <SecNav /> */}
                     </div>
+                </div>
+                <div className='max-w-[1250px] mx-auto lg:px-0 px-5 relative'>
+                    <SecNav />
                 </div>
             </nav>
 
