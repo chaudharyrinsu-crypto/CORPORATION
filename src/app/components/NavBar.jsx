@@ -11,29 +11,23 @@ import { RxCross1 } from "react-icons/rx";
 import { RxCross2 } from "react-icons/rx";
 import { FiMenu } from "react-icons/fi";
 import SecNav from './SecNav';
-import { GoArrowLeft } from "react-icons/go";
-import { useRouter } from 'next/navigation';
 
 
 const NavBar = () => {
     const [showInput, setShowInput] = useState(false)
     const [clickBar, setClickBar] = useState(null)
 
-    const router=useRouter()
     return (
         <>
             <nav className='font-hubot  font-normal lg:font-semibold relative z-10 shadow-md shadow-black/5'>
                 <div className={` max-w-[1100px] mx-auto lg:px-0 px-5`}>
                     <div className='flex justify-between w-full py-4 lg:hidden'>
-                        <button onClick={()=>router.back()} className={`${clickBar ? 'flex lg:hidden' : 'hidden'}  gap-1 items-center`}>
-                            <span className='text-[18px]'><GoArrowLeft /></span>
-                            <span className=' border-b-2 border-[#FF4800] text-sm font-bold'>Back</span>
-                        </button>
+
                         <Link href={`/`}><img className='h-7' src="/logo.svg" alt="" /></Link>
 
                         <span onClick={() => setClickBar(!clickBar)} className={`text-4xl cursor-pointer ${clickBar ? 'rotate-90' : ''} duration-500 lg:hidden block`}>{clickBar ? <RxCross2 /> : <FiMenu />}</span>
                     </div>
-                    <div className={`${clickBar ? 'block' : 'hidden'} lg:hidden`}>
+                    <div className={`${clickBar ? 'block' : 'hidden'} lg:hidden full`}>
                         <SecNav />
                     </div>
                     <div className={`${clickBar ? 'flex' : 'hidden'} lg:flex flex-col`}>
@@ -86,7 +80,7 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className={`lg:block hidden`}>
+                    <div className={`lg:block hidden w-full`}>
                         <SecNav />
                     </div>
                 </div>

@@ -12,7 +12,7 @@ import Bottom from './components/Bottom'
 
 const page = () => {
   return (
-    <div  className='tracking-wide font-hubot'>
+    <div  className='tracking-wide font-hubot overflow-x-hidden'>
       <NavBar/>
       <Hero/>
       {/* <CompanyLogo/> */}
