@@ -80,9 +80,9 @@ const NavBar = () => {
                         </div>
                     </div>
 
-                    <div className={`lg:block hidden w-full`}>
+                    {/* <div className={`lg:block hidden w-full`}>
                         <SecNav />
-                    </div>
+                    </div> */}
                 </div>
                 {/* <div className={`${clickBar ? 'flex' : 'hidden'} lg:flex flex-col max-w-[1250px] mx-auto lg:px-0 px-5 relative `}>
                     <SecNav clickBar={clickBar} setClickBar={setClickBar} />

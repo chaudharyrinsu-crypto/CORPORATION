@@ -9,20 +9,24 @@ import Integration from './components/Integration'
 import CaseStudy from './components/CaseStudy'
 import Vote from './components/Vote'
 import Bottom from './components/Bottom'
+import SecNav from './components/SecNav'
 
 const page = () => {
   return (
-    <div  className='tracking-wide font-hubot overflow-x-hidden'>
-      <NavBar/>
-      <Hero/>
+    <div className='tracking-wide font-hubot '>
+      <NavBar />
+      <div className='lg:block hidden bg-white sticky top-0 z-50 lg:shadow-sm'>
+        <SecNav />
+      </div>
+      <Hero />
       {/* <CompanyLogo/> */}
-      <Slider/>
-      <Products/>
-      <SecSlider/>
-      <Integration/>
-      <CaseStudy/>
-      <Vote/>
-      <Bottom/>
+      <Slider />
+      <Products />
+      <SecSlider />
+      <Integration />
+      <CaseStudy />
+      <Vote />
+      <Bottom />
     </div>
   )
 }
