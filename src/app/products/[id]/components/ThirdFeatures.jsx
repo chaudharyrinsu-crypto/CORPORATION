@@ -12,7 +12,7 @@ const ThirdFeatures = ({ product }) => {
                         <p className='leading-7'>{product?.solutions?.[2]?.description}</p>
                     </div>
                 </div>
-                <div className='grid grid-cols-1 sm:grid-cols-2 2md:gap-0 gap-5 2md:grid-cols-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 2md:gap-4 gap-5 2md:grid-cols-4'>
                     {product?.solutions?.[2]?.features?.map((item, index) => (
                         <div key={index} className='p-5 border-l border-[#D9D9D8] group hover:bg-[#eeeeed] duration-300'>
                             <div className='flex gap-4'>

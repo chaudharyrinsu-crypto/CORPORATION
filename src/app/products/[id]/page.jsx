@@ -12,6 +12,7 @@ import Pricing from './components/Pricing'
 import Questions from './components/Questions'
 import BottomPart from './components/BottomPart'
 import NavBar from '@/app/components/NavBar'
+import SecNav from '@/app/components/SecNav'
 
 const page = () => {
   const params = useParams()
@@ -20,7 +21,10 @@ const page = () => {
 
   return (
     <>
-    <NavBar/>
+      <NavBar />
+      <div className='lg:block hidden bg-white sticky top-0 z-50 lg:shadow-sm'>
+        <SecNav />
+      </div>
       <section className='bg-[#F8F5EE] font-hubot border-b border-[#D9D9D8] text-center'>
         <div className='max-w-[1100px] sm:justify-start justify-center mx-auto py-5 lg:px-0 px-5 text-sm font-semibold flex gap-2 items-center'>
           <Link className='inline-block underline underline-offset-2 decoration-1' href={`/`}>Home</Link>
@@ -43,11 +47,11 @@ const page = () => {
         </div>
       </section>
       <SolutionAbout product={product} />
-      <ExploreBox/>
-      <GrowthPart product={product}/>
-      <Pricing product={product}/>
-      <Questions product={product}/>
-      <BottomPart product={product}/>
+      <ExploreBox />
+      <GrowthPart product={product} />
+      <Pricing product={product} />
+      <Questions product={product} />
+      <BottomPart product={product} />
     </>
   )
 }

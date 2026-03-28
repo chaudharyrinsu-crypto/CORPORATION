@@ -39,7 +39,7 @@ const SecNav = () => {
                         </li>
                         <li className='flex lg:flex-row flex-col justify-between gap-8 w-full lg:py-0 py-5'>
                             <div onClick={() => toggleArrow(1)} className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
-                                <span className='hover:underline'>Products</span>
+                                <span className='hover:underline font-semibold'>Products</span>
                                 <span className={`${openMenu === 1 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
 
                                 {openMenu === 1 && (
@@ -53,20 +53,20 @@ const SecNav = () => {
                                 )}
                             </div>
                             <div onClick={() => toggleArrow(2)} className='flex lg:gap-1.5 justify-between items-center'>
-                                <span className='hover:underline'>Solutions</span>
+                                <span className='hover:underline font-semibold'>Solutions</span>
                                 <span className={`${openMenu === 2 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 lg:rotate-0 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
 
                             </div>
                             <div onClick={() => toggleArrow(3)} className='flex lg:gap-1.5 justify-between items-center'>
-                                <span className='hover:underline'>Pricing</span>
+                                <span className='hover:underline font-semibold'>Pricing</span>
                                 <span className={`${openMenu === 3 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 lg:rotate-0 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
                             </div>
                             <div onClick={() => toggleArrow(4)} className='flex lg:gap-1.5 justify-between items-center'>
-                                <span className='hover:underline'>Resources</span>
+                                <span className='hover:underline font-semibold'>Resources</span>
                                 <span className={`${openMenu === 4 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 lg:rotate-0 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
                             </div>
                             <div onClick={() => toggleArrow(5)} className='flex lg:gap-1.5 justify-between items-center lg:hidden'>
-                                <span className='hover:underline'>About</span>
+                                <span className='hover:underline font-semibold'>About</span>
                                 <span className={`${openMenu === 5 ? 'lg:rotate-180' : 'lg:rotate-0'} transition-transform duration-300 lg:rotate-0 -rotate-90 lg:text-sm text-xl`}><LiaAngleDownSolid /></span>
                             </div>
                         </li>

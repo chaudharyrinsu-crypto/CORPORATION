@@ -12,7 +12,7 @@ const SecFeatures = ({ product }) => {
                 </div>
                 <img className='sm:w-[50%] w-full' src={product?.solutions?.[1]?.aboutimg} alt="aboutimg" />
             </div>
-            <div className='grid grid-cols-1 sm:grid-cols-2 2md:gap-0 gap-5 2md:grid-cols-4'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 2md:gap-4 gap-5 2md:grid-cols-4'>
                 {product?.solutions?.[1]?.features?.map((item, index) => (
                     <div key={index} className='p-5 border-l border-[#D9D9D8] group hover:bg-[#eeeeed] duration-300'>
                         <div className='flex gap-4'>
