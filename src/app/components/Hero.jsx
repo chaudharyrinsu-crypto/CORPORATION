@@ -4,8 +4,8 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
-            <section className='font-hubot'>
-                <div className='sm:h-[520px] sm:py-0 py-8 relative -z-10 flex items-center'>
+            <section className='font-hubot relative z-0'>
+                <div className='sm:h-[520px] sm:py-0 py-8 relative flex items-center '>
                     <img className='h-full w-full object-cover sm:block hidden' src="/homeHero.webp" alt="hero" />
                     {/* overlay */}
                     <div className='w-full h-full absolute top-0 left-0 sm:bg-black/40 bg-[#042729] z-10'></div>
@@ -27,9 +27,9 @@ const Hero = () => {
                             <p className='leading-[30px] font-medium pt-3'>Unite marketing, sales, and customer service on one AI-powered
                                 <span className='inline sm:block'>customer platform that delivers results fast.</span>
                             </p>
-                            <div className='flex sm:flex-row flex-col items-center justify-center gap-4 sm:gap-3 w-full pt-5 font-semibold '>
-                                <Link className='bg-[#FF4800] hover:bg-[#C93700] px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300 text-center' href={``}>Get a demo</Link>
-                                <Link className='border-2 border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300 text-center' href={``}>Get started free</Link>
+                            <div className='flex sm:flex-row flex-col items-center justify-center gap-4 sm:gap-3 w-full pt-5 font-semibold relative '>
+                                <Link className='bg-[#FF4800] hover:bg-[#C93700] px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300 text-center cursor-pointer' href={``}>Get a demo</Link>
+                                <Link className='border-2 border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-9 py-4.5 rounded-md sm:w-auto w-full block duration-300 text-center cursor-pointer' href={``}>Get started free</Link>
                             </div>
                         </div>
                     </div>

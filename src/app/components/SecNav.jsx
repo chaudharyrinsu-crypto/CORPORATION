@@ -44,7 +44,7 @@ const SecNav = () => {
 
                             {openMenu === 1 && (
                                 <div onMouseLeave={() => setOpenMenu(null)} className={`${openMenu ? "translate-x-0" : "-translate-x-full"} lg:translate-x-0 absolute z-50 lg:right-0 lg:top-full top-30 w-full bg-white transition-all duration-300`}>
-                                    <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm mx-auto px-4'>
+                                    <div className='lg:border-t border-t-0 border-[#D9D9D8] bg-white rounded-b-sm px-4'>
                                         <SecNavSlideTop />
                                         <SecNavProductList />
                                         <Breeze />
