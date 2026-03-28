@@ -5,9 +5,9 @@ import { RxCross2 } from "react-icons/rx";
 
 const HubBot = () => {
     return (
-        <>
-            <div className='max-w-[400px]'>
-                <div className='bg-[#1F1F1F] text-white flex items-center justify-between'>
+        <div className=''>
+            <div className='max-w-[400px] font-hubot'>
+                <div className='bg-[#1F1F1F] text-white flex items-center justify-between p-4'>
                     <div className='flex items-center gap-3'>
                         <div className='relative'>
                             <img className='h-10' src={hubBot.logo} alt="logo" />
@@ -17,17 +17,20 @@ const HubBot = () => {
                     </div>
                     <span className='text-3xl'><RxCross2 /></span>
                 </div>
-                <div className='flex'>
+                <div className='flex gap-2 py-4 pl-4 pr-8'>
                     <img className='h-8' src={hubBot.logo} alt="logo" />
-                    <div>
-                        <p>{hubBot.firstdescription}</p>
-                        <p>{hubBot.seconddescription}</p>
-                        <div className='grid grid-cols-2'>
+                    <div className='flex flex-col gap-3'>
+                        <p className='bg-[#eeeeed] px-4 py-3 rounded-xl'>{hubBot.firstdescription}</p>
+                        <p className='bg-[#eeeeed] px-4 py-3 rounded-xl'>{hubBot.seconddescription}</p>
+                        <div className='grid grid-cols-2 gap-2'>
                             {hubBot.features?.map((feature, index) => (
-                                <span key={index}>{feature}</span>
+                                <span key={index} className='border rounded-[10px] text-sm px-4 py-2'>{feature}</span>
                             ))}
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p>HubSpot uses the information you provide to us to contact you about our relevant content, products, and services. Check out our privacy policy here.</p>
                 </div>
                 <div>
                     <input type="text" name="" id="" placeholder='Ask me anything...' />
@@ -36,7 +39,7 @@ const HubBot = () => {
                 <p>AI-generated content may be inaccurate.</p>
 
             </div>
-        </>
+        </div>
     )
 }
 
