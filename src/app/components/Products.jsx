@@ -15,7 +15,7 @@ const Products = () => {
                             </div>
                             <h2 className='lg:text-[40px] text-[32px] font-medium leading-11'>Growing a business is hard. HubSpot makes it easier.</h2>
                             <p>Disconnected tools and data slow you down. HubSpot connects everything — and everyone — in one place to make growing a business easier than you think.</p>
-                            <div className='flex sm:flex-row flex-col items-center gap-4 sm:gap-3 w-full pt-5 font-semibold text-center'>
+                            <div className='flex lg:flex-row flex-col items-start lg:items-center gap-4 sm:gap-3 w-full pt-5 font-semibold text-center'>
                                 <Link className='bg-[#FF4800] hover:bg-[#C93700] px-5 py-3.5 2md:py-4 rounded-md sm:w-auto w-full block duration-300 text-white' href={``}>Get a demo</Link>
                                 <Link className='border-2 border-[#FF4800] text-[#FF4800] bg-white hover:bg-[#FCECE6]  px-5 py-3.5 2md:py-4 rounded-md sm:w-auto w-full block duration-300' href={``}>Get started free</Link>
                             </div>
