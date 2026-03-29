@@ -45,7 +45,7 @@ const NavBar = () => {
 
                                     </li>
                                     <li className='lg:w-auto w-full'>
-                                        <Link target='_blank' className='flex lg:gap-1.5 justify-between items-center ' href={`/customersupport`}>
+                                        <Link className='flex lg:gap-1.5 justify-between items-center ' href={``}>
                                             <span className='lg:block hidden'><TiMessages /></span>
                                             <span className='hover:underline'>Customer Support</span>
                                             <span className='lg:rotate-0 -rotate-90 lg:text-sm text-xl'><LiaAngleDownSolid /></span>
@@ -62,7 +62,7 @@ const NavBar = () => {
                                 <ul className='lg:flex gap-8 justify-between items-center hidden'>
                                     <li onClick={() => setShowInput(!false)} className='text-sm cursor-pointer'><TfiSearch /></li>
                                     <li>
-                                        <Link className='hover:underline' href={``}>Log in</Link>
+                                        <Link className='hover:underline' href={`/login`}>Log in</Link>
                                     </li>
                                     <li className='flex lg:gap-1.5 justify-between items-center cursor-pointer'>
                                         <span className='hover:underline'>About</span>

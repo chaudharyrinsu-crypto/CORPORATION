@@ -4,6 +4,7 @@ import React from 'react'
 const Hero = () => {
     return (
         <>
+
             <section className='font-hubot relative z-0'>
                 <div className='sm:h-[520px] sm:py-0 py-8 relative flex items-center '>
                     <img className='h-full w-full object-cover sm:block hidden' src="/homeHero.webp" alt="hero" />

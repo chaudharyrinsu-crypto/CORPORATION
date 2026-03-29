@@ -103,6 +103,20 @@ export const commerceHub =
         description: "See how teams are using Commerce Hub to accelerate the quote-to-cash process with automation.",
         thumbnail: "https://53.fs1.hubspotusercontent-na1.net/hub/53/hubfs/custom-video-thumbnails/WV_Commerce%20Hub_FINAL_2-thumb.jpeg?length=1920",
     },
+     growth: [
+        {
+            number: "73%",
+            description: "of sales professionals say HubSpot increased their win rate"
+        },
+        {
+            number: "94%",
+            description: "more deals closed after 6 months"
+        },
+        {
+            number: "48%",
+            description: "decrease in average time to close with AI sales features"
+        }
+    ],
     companylogos: ["https://www.hubspot.com/hubfs/morehouse-logo-color.svg", "https://www.hubspot.com/hs-fs/hubfs/KaplanELC-full-4.webp?width=416&height=192&name=KaplanELC-full-4.webp", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GameSquare-1.png?width=526&height=94&name=GameSquare-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/GoFundMe-Charity-1.png?width=364&height=128&name=GoFundMe-Charity-1.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/eventbrite-Mar-16-2023-05-12-14-9624-PM.png?width=640&height=250&name=eventbrite-Mar-16-2023-05-12-14-9624-PM.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/logo-doordash-2x-1.png?width=568&height=276&name=logo-doordash-2x-1.png", "https://www.hubspot.com/hs-fs/hubfs/Canadian_Red_Cross_logo.svg.png?width=3840&height=1134&name=Canadian_Red_Cross_logo.svg.png", "https://www.hubspot.com/hs-fs/hubfs/Imported%20sitepage%20images/amika%20for%20HS%20Website-1-1.png?width=580&height=260&name=amika%20for%20HS%20Website-1-1.png"],
  pricing:[
     {
