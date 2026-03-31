@@ -5,7 +5,7 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 const Questions = ({product}) => {
   return (
     <>
-      <section className='font-hubot bg-[#FCFCFA] py-20 lg:px-0 px-5'>
+      <section className='font-hubot bg-[#FCFCFA] py-20 lg:px-0 px-5 text-black'>
         <div className=' lg:max-w-[1100px] mx-auto font-semibold'>
             <h2 className='text-2xl pb-10'>Frequently Asked Questions</h2>
             <div className='grid sm:grid-cols-2 grid-cols-1 justify-between gap-5'>

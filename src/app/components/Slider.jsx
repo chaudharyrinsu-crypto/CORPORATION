@@ -21,7 +21,7 @@ const Slider = () => {
     const swiperRef = useRef(null)
     return (
         <>
-            <section className=' relative font-hubot lg:py-40 md:py-30 py-20 bg-[#FCFCFA]'>
+            <section className=' relative font-hubot lg:py-40 md:py-30 py-20 bg-[#FCFCFA] text-black'>
                 <div className='max-w-[1100px] mx-auto lg:px-0 px-5'>
                     <SliderHeader />
                     <div className='pt-4'>

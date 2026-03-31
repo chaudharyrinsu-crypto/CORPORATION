@@ -20,7 +20,7 @@ const SecSlider = () => {
   const swiperRef = useRef(null)
   return (
     <>
-      <section className='bg-linear-to-r from-[#FCCCD1] via-[#FBDED8] to-[#FDB89C] py-20 font-hubot'>
+      <section className='bg-linear-to-r from-[#FCCCD1] via-[#FBDED8] to-[#FDB89C] py-20 font-hubot text-black'>
         <div className='lg:px-0 px-5 lg:max-w-[1100px] mx-auto'>
           <div className='flex sm:gap-0 gap-5 sm:flex-row flex-col justify-start sm:justify-between items-start sm:items-center'>
             <div className='bg-white border border-[#D9D9D8] rounded-2xl px-4 py-3.5'>

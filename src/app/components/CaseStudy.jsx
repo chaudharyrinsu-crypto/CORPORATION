@@ -6,8 +6,8 @@ import Link from 'next/link'
 const CaseStudy = () => {
     return (
         <>
-            <section className='bg-[#FCFCFA] pt-15 font-hubot lg:px-0 px-5 tracking-wide'>
-                <div className='lg:max-w-[1100px] mx-auto'>
+            <section className='bg-[#FCFCFA] pt-15 font-hubot lg:px-0 px-5 tracking-wide text-black'>
+                <div className='lg:max-w-[1100px] mx-auto '>
                     <div className='flex sm:flex-row flex-col items-start sm:gap-0 gap-5 sm:items-center justify-start sm:justify-between'>
                         <span className='border border-[#D9D9D8] rounded-sm px-2 py-1.5 text-center font-semibold text-sm bg-white'>Case Studies</span>
                         <Link className='px-5 py-3.5 rounded-md sm:w-auto duration-300 sm:w-auto w-full text-center font-semibold border-2 border-black hover:bg-[#eeeeed] block' href={``}>See all case studies</Link>
@@ -16,7 +16,7 @@ const CaseStudy = () => {
                         <h2 className='lg:text-[40px] text-[32px] font-medium leading-10 lg:leading-11 lg:w-[40%] sm:w-1/2 w-full'>{caseStudy.title}</h2>
                         <p className='lg:w-[40%] sm:w-1/2 w-full '>{caseStudy.description}</p>
                     </div>
-                    <div className='flex gap-1 justify-center items-center px-1'>
+                    <div className='flex gap-1 justify-start xs:justify-center items-center px-1 w-full  xs:overflow-hidden overflow-x-scroll xs:whitespace-normal whitespace-nowrap'>
                         {caseStudy.links.map((link, index) => (
                             <button className={`${index === 0 ? 'border-b border-b-4 border-[#FF4800]' : ''} font-semibold hover:bg-[#eeeeed] duration-300 py-2 px-4 block`} key={index}>{link}</button>
                         ))}

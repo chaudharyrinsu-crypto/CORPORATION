@@ -25,7 +25,7 @@ const page = () => {
       <div className='lg:block hidden bg-white sticky top-0 z-50 lg:shadow-sm'>
         <SecNav />
       </div>
-      <section className='bg-[#F8F5EE] font-hubot border-b border-[#D9D9D8] text-center'>
+      <section className='bg-[#F8F5EE] font-hubot border-b border-[#D9D9D8] text-center  text-black'>
         <div className='max-w-[1100px] sm:justify-start justify-center mx-auto py-5 lg:px-0 px-5 text-sm font-semibold flex gap-2 items-center'>
           <Link className='inline-block underline underline-offset-2 decoration-1' href={`/`}>Home</Link>
           <span className={`inline-block -rotate-90  text-[12px]`}><LiaAngleDownSolid /></span>

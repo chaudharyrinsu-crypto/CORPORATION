@@ -4,7 +4,7 @@ import React from 'react'
 const Features = ({ product }) => {
     return (
         <>
-            <div className='flex sm:flex-row flex-col gap-5 items-center justify-between'>
+            <div className='flex sm:flex-row flex-col gap-5 items-center justify-between '>
                 <img className='sm:w-[50%] w-full' src={product?.solutions?.[0]?.aboutimg} alt="aboutimg" />
                 <div className='flex flex-col gap-2 items-start sm:w-[50%] w-full'>
                     <h2 className='text-2xl font-semibold'>{product?.solutions?.[0]?.title}</h2>

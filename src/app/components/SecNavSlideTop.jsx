@@ -5,7 +5,7 @@ import { LiaAngleDownSolid } from "react-icons/lia";
 const SecNavSlideTop = () => {
     return (
         <>
-            <div className='lg:py-4 py-0 lg:pt-0 pt-4 flex lg:flex-row flex-col justify-between  border-b border-[#D9D9D8]'>
+            <div className='lg:py-4 py-0 lg:pt-0 pt-4 flex lg:flex-row flex-col justify-between  border-b border-[#D9D9D8]  text-black'>
                 <div className='space-y-2 lg:border-none border-b border-[#D9D9D8] py-4.5 cursor-auto'>
                     <h2 className='text-[16px] font-semibold'>The HubSpot Customer Platform</h2>
                     <p className='text-[14px] lg:text-[12px] font-normal'>All of HubSpot's marketing, sales, and customer service software on one AI-powered platform.</p>

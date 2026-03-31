@@ -7,13 +7,13 @@ import { GoCheck } from "react-icons/go";
 const Pricing = ({ product }) => {
     return (
         <>
-            <section className='bg-[#F8F5EE] font-hubot sm:py-20 py-15 lg:py-20 lg:px-0 px-8'>
+            <section className='bg-[#F8F5EE] font-hubot sm:py-20 py-15 lg:py-20 lg:px-0 px-8  text-black'>
                 <div className=' lg:max-w-[1100px] mx-auto'>
                     <div className='text-center space-y-4 sm:space-y-5 px-5'>
                         <h2 className='lg:text-[40px] text-[32px] font-semibold leading-10 sm:leading-12'>Grow Without Limits: {product.name} <span className='2md:block inline'>Pricing</span></h2>
                         <p>Marketing software that scales with you.</p>
                     </div>
-                    <div className='sm:grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 py-5 sm:justify-between flex flex-col items-center justify-center gap-6 lg:gap-4 lg:px-0 2md:px-50 md:px-20 sm:px-10 px-15'>
+                    <div className='sm:grid grid-cols-1 lg:grid-cols-4 sm:grid-cols-2 py-5 sm:justify-between flex flex-col items-center justify-center gap-6 lg:gap-4 lg:px-0 2md:px-50 md:px-20 sm:px-10 px-5'>
                         {product?.pricing?.map((item, index) => (
                             <div key={index} className='bg-white pt-6 px-6 sm:pb-25 pb-10 rounded-xl border border-[#D9D9D8] '>
                                 <div className='pb-5'>

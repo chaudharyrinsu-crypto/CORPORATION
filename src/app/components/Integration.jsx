@@ -6,7 +6,7 @@ import { logos } from '../data/home/integrationLogos'
 const Integration = () => {
     return (
         <>
-            <section className='bg-[#FCFCFA] py-15 font-hubot lg:px-0 px-5 tracking-wide'>
+            <section className='bg-[#FCFCFA] py-15 font-hubot lg:px-0 px-5 tracking-wide text-black'>
                 <div className='lg:max-w-[1100px] mx-auto  bg-white border border-[#D9D9D8] h-auto lg:h-[250px] rounded-2xl flex lg:flex-row flex-col justify-between overflow-hidden'>
                     <div className='flex flex-col justify-center lg:order-1 order-2 gap-5 lg:w-1/2 w-full lg:pr-0 pr-10 pl-8 sm:pl-15 2md:pl-20 lg:py-0 py-15'>
                         <h3 className='text-2xl font-semibold leading-7.5'>Works with the tools you already use. 2,000+ integrations.</h3>

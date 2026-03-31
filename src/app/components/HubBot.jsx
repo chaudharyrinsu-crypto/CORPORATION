@@ -9,7 +9,7 @@ const HubBot = () => {
     const [openMenu, setOpenMenu] = useState(false)
     const [hideDescription, setHideDescription] = useState(false)
     return (
-        <div className='fixed right-2 left-2 xs:left-auto xs:right-4 bottom-8  z-[100] '>
+        <div className='fixed right-2 left-2 xs:left-auto xs:right-4 bottom-4  z-[100] text-black shadow-md'>
             <div className='xs:max-w-[420px] max-w-[400px] font-hubot relative'>
                 <div className={`${openMenu?'hidden':'block'} bg-white rounded-xl overflow-hidden`}>
                     <div className='bg-[#1F1F1F] w-full text-white flex items-center justify-between p-4'>
@@ -27,7 +27,7 @@ const HubBot = () => {
                         <div className='flex flex-col gap-2'>
                             <p className='bg-[#eeeeed] px-4 py-3 rounded-xl text-sm'>{hubBot.firstdescription}</p>
                             <p className='bg-[#eeeeed] px-4 py-3 rounded-xl text-sm'>{hubBot.seconddescription}</p>
-                            <div className='grid grid-cols-2 gap-2 '>
+                            <div className='grid grid-cols-1 xs:grid-cols-2 gap-2 '>
                                 {hubBot.features?.map((feature, index) => (
                                     <span key={index} className='border rounded-[10px] text-[12px] px-4 py-2'>{feature}</span>
                                 ))}
@@ -46,8 +46,8 @@ const HubBot = () => {
                     </div>
                     <p className='text-[12px] text-center pb-2'>AI-generated content may be inaccurate.</p>
                 </div>
-                <div className='px-4 py-10 text-center'>
-                    <span onClick={()=>setOpenMenu(!openMenu)} className='text-3xl p-3.5 absolute right-4 bottom-0 bg-[#1F1F1F] text-white rounded-full'>{openMenu ? < TiMessages/> : <RxCross2 />}</span>
+                <div className='px-4 py-9 text-center'>
+                    <span onClick={()=>setOpenMenu(!openMenu)} className='text-3xl p-3.5 absolute right-2 bottom-0 bg-[#1F1F1F] text-white rounded-full'>{openMenu ? < TiMessages/> : <RxCross2 />}</span>
                 </div>
             </div>
         </div>

@@ -7,12 +7,12 @@ import ThirdFeatures from './ThirdFeatures'
 const FirstSolutionAbout = ({ product }) => {
   return (
     <>
-      <section className='font-hubot bg-[#FCFCFA] p-0'>
+      <section className='font-hubot bg-[#FCFCFA] p-0  text-black'>
         <div className='lg:max-w-[1100px] mx-auto px-5 lg:px-0'>
-          
-          <Features product={ product }/>
-          <SecFeatures product={ product }/>
-          <ThirdFeatures product={ product } />
+
+          <Features product={product} />
+          <SecFeatures product={product} />
+          <ThirdFeatures product={product} />
         </div>
       </section>
     </>

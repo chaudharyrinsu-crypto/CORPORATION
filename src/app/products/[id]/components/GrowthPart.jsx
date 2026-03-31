@@ -8,7 +8,7 @@ import Companylogos from './Companylogos'
 const GrowthPart = ({ product }) => {
   return (
     <>
-      <section className='bg-[#FCFCFA] font-hubot sm:py-20 py-15 lg:py-20 lg:px-0 px-5'>
+      <section className='bg-[#FCFCFA] font-hubot sm:py-20 py-15 lg:py-20 lg:px-0 px-5  text-black'>
         <div className='max-w-[1100px] mx-auto relative'>
           <div className='flex sm:gap-0 gap-5 sm:flex-row flex-col justify-start sm:justify-between items-start sm:items-center'>
             <span className='border border-[#D9D9D8] rounded-sm px-2 py-1.5 text-center font-semibold text-sm bg-white block'>Customer Proof</span>

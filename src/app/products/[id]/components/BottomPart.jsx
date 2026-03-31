@@ -5,7 +5,7 @@ import React from 'react'
 const BottomPart = ({ product }) => {
     return (
         <>
-            <section className='bg-[#F8F5EE] py-5 font-hubot lg:px-0 px-5'>
+            <section className='bg-[#F8F5EE] py-5 font-hubot lg:px-0 px-5 text-black'>
                 <div className='lg:max-w-[1100px] mx-auto flex sm:flex-row flex-col justify-between items-center sm:gap-0 gap-3'>
                     <div className='flex flex-col gap-4 sm:order-1 order-2'>
                         <h2 className='text-2xl font-semibold'>{product.demo?.title}</h2>
